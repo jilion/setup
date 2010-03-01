@@ -1,4 +1,4 @@
-# add: load '<path to this file>' at the top of your ~/.irbrc
+# add: load "$JIME_SETUP_PATH/shell/irbrc" at the top of your ~/.irbrc
 
 # ===========
 # = Configs =
