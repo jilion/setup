@@ -8,7 +8,7 @@
   begin
     require gem
   rescue LoadError => err
-    warn "Please do: gem install #{gem}"
+    warn "Please do: gem install #{gem.sub(/\/.*/,'')}"
   end
 end
 
