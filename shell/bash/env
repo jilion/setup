@@ -1,0 +1,8 @@
+export PATH=$JIME_SETUP_PATH/bin:$PATH
+
+# Textmate
+export PATH=$PATH:/Applications/TextMate.app/Contents/Resources
+export EDITOR='mate -w'
+export GIT_EDITOR="mate -w"
+
+# Set PATH, CDPATH, EDITOR, etc.echo
