@@ -8,15 +8,15 @@ alias ea="mate -w $JIME_SETUP_PATH/shell/bash/aliases && reload" # Edit aliases
 alias js="cd $JIME_SETUP_PATH; clear"
 alias jj="cd $JIME_CODE_PATH/Jime.com; clear"
 alias jf="cd $JIME_CODE_PATH/Jime.org; clear"
-alias ji="cd $JIME_CODE_PATH/Jilion.com; clear"
 alias ju="cd $JIME_CODE_PATH/upload; clear"
 alias jb="cd $JIME_CODE_PATH/backstage; clear"
 alias jl="cd $JIME_CODE_PATH/locations; clear"
 
 # Jilion
-alias wd="cd $JILION_PATH/Mnemis/webdoc; clear"
-alias ca="cd $JILION_PATH/Caprices/caprices; clear"
-alias mi="cd $JILION_PATH/mintt/mintt; clear"
+alias wd="cd $JILION_PATH/Customers/Mnemis/webdoc; clear"
+alias ca="cd $JILION_PATH/Customers/Caprices/caprices; clear"
+alias mi="cd $JILION_PATH/Customers/Mintt/mintt; clear"
+alias ji="cd $JILION_PATH/Jilion.com; clear"
 
 # Common -- Some are from Damian Conway
 alias l="ls -lh"
