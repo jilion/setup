@@ -21,8 +21,12 @@ alias ji="cd $JILION_PATH/Jilion.com; clear"
 # Common -- Some are from Damian Conway
 alias l="ls -lh"
 alias la="ls -lah"
-alias h='history'
-alias o='open . &'
+alias ll="la"
+
+alias 'h'='history'
+alias o="open ."
+alias ..="cd .."
+alias cd..="cd .."
 
 # Function
 function take() { 
