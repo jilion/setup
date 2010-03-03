@@ -89,8 +89,7 @@ function new-git() {
 
 # TextMate
 alias m="mate"
-alias et="mate app config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec features test todo tools Rakefile README cucumber.yml .gitignore .git/config config.ru Gemfile"
-alias ett="mate ."
+alias mr="mate app config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec features test todo tools Rakefile README cucumber.yml .gitignore .git/config config.ru Gemfile"
 
 # Ruby
 alias r="rake"
