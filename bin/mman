@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+man $1 | col -b | mate

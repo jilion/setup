@@ -11,8 +11,8 @@ alias jf="cd $JIME_CODE_PATH/Jime.org; clear"
 alias ju="cd $JIME_CODE_PATH/upload; clear"
 alias jb="cd $JIME_CODE_PATH/backstage; clear"
 alias jl="cd $JIME_CODE_PATH/locations; clear"
-
-# Jilion
+         
+# Jilion 
 alias wd="cd $JILION_PATH/Customers/Mnemis/webdoc; clear"
 alias ca="cd $JILION_PATH/Customers/Caprices/caprices; clear"
 alias mi="cd $JILION_PATH/Customers/Mintt/mintt; clear"
@@ -23,19 +23,19 @@ alias l="ls -lh"
 alias la="ls -lah"
 alias ll="la"
 
-alias 'h'='history'
+alias h="history"
 alias o="open ."
 alias ..="cd .."
 alias cd..="cd .."
 
 # Function
 function take() { 
-    mkdir -p "$1"
-    cd "$1" 
+  mkdir -p "$1"
+  cd "$1" 
 }
 alias k9="killall -9"
 function killnamed () { 
-    ps ax | grep $1 | cut -d ' ' -f 2 | xargs kill 
+  ps ax | grep $1 | cut -d ' ' -f 2 | xargs kill 
 }
 function zipr() {
   zip -r $1.zip $1
@@ -49,24 +49,24 @@ alias tm='top -o vsize' # memory
 # = GIT =
 # =======
 alias ungit="find . -name '.git' -exec rm -rf {} \;"
-alias gb='git branch'
-alias gba='git branch -a'
-alias gc='git commit -v'
-alias gca='git commit -v -a'
+alias gb="git branch"
+alias gba="git branch -a"
+alias gc="git commit -v"
+alias gca="git commit -v -a"
 # Commit pending changes and quote all args as message
 function gg() { 
-    git commit -v -a -m "$*"
+  git commit -v -a -m "$*"
 }
-alias gco='git checkout'
-alias gd='git diff'
-alias gdm='git diff master'
-alias gl='git pull'
+alias gco="git checkout"
+alias gd="git diff"
+alias gdm="git diff master"
+alias gl="git pull"
 alias gnp="git-notpushed"
-alias gp='git push'
-alias gst='git status'
-alias gt='git status'
-alias g='git status'
-alias eg='mate .git/config'
+alias gp="git push"
+alias gst="git status"
+alias gt="git status"
+alias g="git status"
+alias eg="mate .git/config"
 # Git clone from GitHub
 function gch() {
   git clone git://github.com/$USER/$1.git
@@ -93,11 +93,12 @@ function new-git() {
 
 # TextMate
 alias m="mate"
-alias mr="mate app config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec features test todo tools Rakefile README cucumber.yml .gitignore .git/config config.ru Gemfile"
+alias mm="mate ."
+alias mr="mate app config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec features test todo tools Rakefile README cucumber.yml .gitignore .gems .git/config config.ru Gemfile"
 
 # Ruby
 alias r="rake"
-alias irb='irb --readline -r irb/completion'
+alias irb="irb --readline -r irb/completion"
 
 # rugygem
 alias gu="gem update"
@@ -129,8 +130,8 @@ alias dbr="rake db:drop:all
            rake db:test:prepare
            rake db:seed
            annotate"
-           
-alias tl='tail -f log/*.log'
+
+alias tl="tail -f log/*.log"
 alias tld="tail -f log/development.log"
 alias tlt="tail -f log/test.log"
 alias tlp="tail -f log/production.log"
@@ -141,4 +142,4 @@ alias rsc="rspactor --clear"
 alias cu="clear
           rake features:wip"
 alias cul="clear
-          rake features"
+           rake features"
