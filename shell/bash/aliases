@@ -1,33 +1,33 @@
 # Command Enhancements
 
 # Utility
-alias reload="source $JIME_SETUP_PATH/shell/bash/aliases"
-alias ea="mate -w $JIME_SETUP_PATH/shell/bash/aliases && reload" # Edit aliases
+alias reload = "source $JIME_SETUP_PATH/shell/bash/aliases"
+alias ea     = "mate -w $JIME_SETUP_PATH/shell/bash/aliases && reload" # Edit aliases
 
 # Jime
-alias js="cd $JIME_SETUP_PATH; clear"
-alias jj="cd $JIME_CODE_PATH/Jime.com; clear"
-alias jf="cd $JIME_CODE_PATH/Jime.org; clear"
-alias ju="cd $JIME_CODE_PATH/upload; clear"
-alias jb="cd $JIME_CODE_PATH/backstage; clear"
-alias jl="cd $JIME_CODE_PATH/locations; clear"
+alias js = "cd $JIME_SETUP_PATH; clear"
+alias jj = "cd $JIME_CODE_PATH/Jime.com; clear"
+alias jf = "cd $JIME_CODE_PATH/Jime.org; clear"
+alias ju = "cd $JIME_CODE_PATH/upload; clear"
+alias jb = "cd $JIME_CODE_PATH/backstage; clear"
+alias jl = "cd $JIME_CODE_PATH/locations; clear"
          
 # Jilion 
-alias wd="cd $JILION_PATH/Customers/Mnemis/webdoc; clear"
-alias ca="cd $JILION_PATH/Customers/Caprices/caprices; clear"
-alias mi="cd $JILION_PATH/Customers/Mintt/mintt; clear"
-alias ji="cd $JILION_PATH/Jilion.com; clear"
-alias sb="cd $JILION_PATH/Products/Sublime/sublime; clear"
+alias wd = "cd $JILION_PATH/Customers/Mnemis/webdoc; clear"
+alias ca = "cd $JILION_PATH/Customers/Caprices/caprices; clear"
+alias mi = "cd $JILION_PATH/Customers/Mintt/mintt; clear"
+alias ji = "cd $JILION_PATH/Products/Jilion.com/jilion_v2; clear"
+alias sb = "cd $JILION_PATH/Products/Sublime/sublime; clear"
 
 # Common -- Some are from Damian Conway
-alias l="ls -lh"
-alias la="ls -lah"
-alias ll="la"
+alias l  = "ls -lh"
+alias la = "ls -lah"
+alias ll = "la"
 
-alias h="history"
-alias o="open ."
-alias ..="cd .."
-alias cd..="cd .."
+alias h    = "history"
+alias o    = "open ."
+alias ..   = "cd .."
+alias cd.. = "cd .."
 
 # Function
 function take() { 
@@ -43,31 +43,31 @@ function zipr() {
 }
 
 # Processes
-alias tu='top -o cpu' # cpu
-alias tm='top -o vsize' # memory
+alias tu = "top -o cpu" # cpu
+alias tm = "top -o vsize" # memory
 
 # =======
 # = GIT =
 # =======
-alias ungit="find . -name '.git' -exec rm -rf {} \;"
-alias gb="git branch"
-alias gba="git branch -a"
-alias gc="git commit -v"
-alias gca="git commit -v -a"
+alias ungit = "find . -name '.git' -exec rm -rf {} \;"
+alias gb    = "git branch"
+alias gba   = "git branch -a"
+alias gc    = "git commit -v"
+alias gca   = "git commit -v -a"
 # Commit pending changes and quote all args as message
 function gg() { 
   git commit -v -a -m "$*"
 }
-alias gco="git checkout"
-alias gd="git diff"
-alias gdm="git diff master"
-alias gl="git pull"
-alias gnp="git-notpushed"
-alias gp="git push"
-alias gst="git status"
-alias gt="git status"
-alias g="git status"
-alias eg="mate .git/config"
+alias gco = "git checkout"
+alias gd  = "git diff"
+alias gdm = "git diff master"
+alias gl  = "git pull"
+alias gnp = "git-notpushed"
+alias gp  = "git push"
+alias gst = "git status"
+alias gt  = "git status"
+alias g   = "git status"
+alias eg  = "mate .git/config"
 # Git clone from GitHub
 function gch() {
   git clone git://github.com/$USER/$1.git
@@ -93,55 +93,53 @@ function new-git() {
 }
 
 # TextMate
-alias m="mate"
-alias m.="mate ."
-alias mm="mate ."
-alias mr="mate app config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec features test todo tools Rakefile README cucumber.yml .gitignore .gems .git/config config.ru Gemfile"
+alias m  = "mate"
+alias m. = "mate ."
+alias mm = "mate ."
+alias mr = "mate app config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec features test todo tools Rakefile README cucumber.yml .gitignore .gems .git/config config.ru Gemfile"
 
 # Ruby
-alias r="rake"
-alias irb="irb --readline -r irb/completion"
+alias r   = "rake"
+alias irb = "irb --readline -r irb/completion"
 
 # rugygem
-alias gu="gem update"
-alias gi="gem install"
-alias gui="gem uninstall"
+alias gu  = "gem update"
+alias gi  = "gem install"
+alias gui = "gem uninstall"
 
 # open_gem
-alias go='gem open --latest'
-alias gr='gem read --latest'
+alias go = "gem open --latest"
+alias gr = "gem read --latest"
 
 # Rails
-alias ttr='touch tmp/restart.txt'
-alias rr='rake routes'
-alias sc='./script/console'
-alias sg='./script/generate'
-alias sd='./script/destroy'
-alias sp='./script/plugin'
-alias ss='./script/server'
-alias ssu='./script/server -u'
-alias ssp='./script/server -e production'
-alias ssc='./script/server -p 3001 -e test'
-alias ts='thin start'
+alias ttr  = "touch tmp/restart.txt"
+alias rr   = "rake routes"
+alias sc   = "./script/console"
+alias sg   = "./script/generate"
+alias sd   = "./script/destroy"
+alias sp   = "./script/plugin"
+alias ss   = "./script/server"
+alias ssu  = "./script/server -u"
+alias ssp  = "./script/server -e production"
+alias ssc  = "./script/server -p 3001 -e test"
+alias ts   = "thin start"
 
-alias dbtp="rake db:test:prepare"
-alias dbm="rake db:migrate"
-alias dbr="rake db:drop:all
+alias dbtp = "rake db:test:prepare"
+alias dbm  = "rake db:migrate"
+alias dbr  = "rake db:drop:all
            rake db:create:all
            rake db:migrate
            rake db:test:prepare
            rake db:seed
            annotate"
 
-alias tl="tail -f log/*.log"
-alias tld="tail -f log/development.log"
-alias tlt="tail -f log/test.log"
-alias tlp="tail -f log/production.log"
+alias tl   = "tail -f log/*.log"
+alias tld  = "tail -f log/development.log"
+alias tlt  = "tail -f log/test.log"
+alias tlp  = "tail -f log/production.log"
 
 # BDD
-alias rs="rspactor --drb --clear"
-alias rsc="rspactor --clear"
-alias cu="clear
-          rake features:wip"
-alias cul="clear
-           rake features"
+alias rs  = "rspactor --drb --clear"
+alias rsc = "rspactor --clear"
+alias cu  = "clear; rake features:wip"
+alias cul = "clear; rake features"
