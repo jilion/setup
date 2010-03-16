@@ -17,6 +17,7 @@ alias wd="cd $JILION_PATH/Customers/Mnemis/webdoc; clear"
 alias ca="cd $JILION_PATH/Customers/Caprices/caprices; clear"
 alias mi="cd $JILION_PATH/Customers/Mintt/mintt; clear"
 alias ji="cd $JILION_PATH/Jilion.com; clear"
+alias sb="cd $JILION_PATH/Products/Sublime/sublime; clear"
 
 # Common -- Some are from Damian Conway
 alias l="ls -lh"
