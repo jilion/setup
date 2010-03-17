@@ -17,6 +17,7 @@ alias wd="cd $JILION_PATH/Customers/Mnemis/webdoc; clear"
 alias ca="cd $JILION_PATH/Customers/Caprices/caprices; clear"
 alias mi="cd $JILION_PATH/Customers/Mintt/mintt; clear"
 alias ji="cd $JILION_PATH/Products/Jilion.com/jilion_v2; clear"
+alias sb="cd $JILION_PATH/Products/Sublime/sublime; clear"
 
 # Common -- Some are from Damian Conway
 alias l="ls -lh"
@@ -42,8 +43,8 @@ function zipr() {
 }
 
 # Processes
-alias tu='top -o cpu' # cpu
-alias tm='top -o vsize' # memory
+alias tu="top -o cpu" # cpu
+alias tm="top -o vsize" # memory
 
 # =======
 # = GIT =
@@ -107,21 +108,21 @@ alias gi="gem install"
 alias gui="gem uninstall"
 
 # open_gem
-alias go='gem open --latest'
-alias gr='gem read --latest'
+alias go="gem open --latest"
+alias gr="gem read --latest"
 
 # Rails
-alias ttr='touch tmp/restart.txt'
-alias rr='rake routes'
-alias sc='./script/console'
-alias sg='./script/generate'
-alias sd='./script/destroy'
-alias sp='./script/plugin'
-alias ss='./script/server'
-alias ssu='./script/server -u'
-alias ssp='./script/server -e production'
-alias ssc='./script/server -p 3001 -e test'
-alias ts='thin start'
+alias ttr="touch tmp/restart.txt"
+alias rr="rake routes"
+alias sc="./script/console"
+alias sg="./script/generate"
+alias sd="./script/destroy"
+alias sp="./script/plugin"
+alias ss="./script/server"
+alias ssu="./script/server -u"
+alias ssp="./script/server -e production"
+alias ssc="./script/server -p 3001 -e test"
+alias ts="thin start"
 
 alias dbtp="rake db:test:prepare"
 alias dbm="rake db:migrate"
