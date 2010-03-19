@@ -131,7 +131,7 @@ alias dbr="rake db:drop:all
            rake db:migrate
            rake db:test:prepare
            rake db:seed
-           annotate"
+           annotate -p before"
 
 alias tl="tail -f log/*.log"
 alias tld="tail -f log/development.log"
