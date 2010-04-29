@@ -97,7 +97,7 @@ function new-git() {
 alias m="mate"
 alias m.="mate ."
 alias mm="mate ."
-alias mr="mate app config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec features test todo todo.todo tools Rakefile README cucumber.yml .gitignore .gems .git/config config.ru Gemfile"
+alias mr="mate app config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec features test todo todo.todo tools Rakefile README cucumber.yml .gitignore .gems .git/config config.ru Gemfile Gemfile.lock"
 
 # Ruby
 alias r="rake"
@@ -107,6 +107,12 @@ alias irb="irb --readline -r irb/completion"
 alias gu="gem update"
 alias gi="gem install"
 alias gui="gem uninstall"
+
+# bundler
+alias bi='bundle install'
+alias bir='bundle install --relock'
+alias bl='bundle lock'
+alias bp='bundle package'
 
 # open_gem
 alias go="gem open --latest"
