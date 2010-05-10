@@ -19,6 +19,7 @@ alias mi="cd $JILION_PATH/Customers/Mintt/mintt; clear"
 alias ji="cd $JILION_PATH/Products/Jilion.com/jilion.com; clear"
 alias sb="cd $JILION_PATH/Products/Jilion.com/sublime; clear"
 alias sv="cd $JILION_PATH/Products/SublimeVideo/sublime_video; clear"
+alias msv="cd $JILION_PATH/Products/MySublimeVideo/my.sublimevideo.net; clear"
 
 # Common -- Some are from Damian Conway
 alias l="ls -lh"
