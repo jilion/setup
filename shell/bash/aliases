@@ -98,7 +98,7 @@ function new-git() {
 alias m="mate"
 alias m.="mate ."
 alias mm="mate ."
-alias mr="mate app config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec features test todo todo.todo tools Rakefile README cucumber.yml .gitignore .gems .git/config config.ru Gemfile Gemfile.lock"
+alias mr="mate app config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec rspec.watchr features test todo todo.todo tools Rakefile README cucumber.yml .gitignore .gems .git/config config.ru Gemfile Gemfile.lock"
 
 # Ruby
 alias r="rake"
@@ -149,9 +149,6 @@ alias tlt="tail -f log/test.log"
 alias tlp="tail -f log/production.log"
 
 # BDD
-alias rs="rspactor --drb --clear"
-alias rsc="rspactor --clear"
-alias cu="clear
-          rake features:wip"
-alias cul="clear
-           rake features"
+alias rs="rake spec"
+alias rsa="rake spec:acceptance"
+alias wr="bundle exec watchr rspec.watchr"
