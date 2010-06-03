@@ -70,6 +70,7 @@ alias gst="git status"
 alias gt="git status"
 alias g="git status"
 alias eg="mate .git/config"
+alias gx="gitx"
 # Git clone from GitHub
 function gch() {
   git clone git://github.com/$USER/$1.git
@@ -98,7 +99,7 @@ function new-git() {
 alias m="mate"
 alias m.="mate ."
 alias mm="mate ."
-alias mr="mate app config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec rspec.watchr features test todo todo.todo tools Rakefile README cucumber.yml .gitignore .gems .git/config config.ru Gemfile Gemfile.lock"
+alias mr="mate app config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec rspec.watchr features test todo todo.todo tools Rakefile README CHANGELOG cucumber.yml .gitignore .gems .git/config config.ru Gemfile Gemfile.lock"
 
 # Ruby
 alias r="rake"
