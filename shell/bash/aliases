@@ -143,7 +143,9 @@ alias dbr="rake db:drop:all
            rake db:seed
            annotate -p before"
 
-alias dbrp="dbr && rake db:populate"
+alias dbp="rake db:populate"
+
+alias dbrp="dbr && dbp"
 
 alias tl="tail -f log/*.log"
 alias tld="tail -f log/development.log"
