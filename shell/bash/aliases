@@ -121,18 +121,13 @@ alias bs='bundle show'
 alias go="gem open --latest"
 alias gr="gem read --latest"
 
-# Rails
+
+# =========
+# = Rails =
+# =========
+
 alias ttr="touch tmp/restart.txt"
 alias rr="rake routes"
-alias sc="./script/console"
-alias sg="./script/generate"
-alias sd="./script/destroy"
-alias sp="./script/plugin"
-alias ss="./script/server"
-alias ssu="./script/server -u"
-alias ssp="./script/server -e production"
-alias ssc="./script/server -p 3001 -e test"
-alias ts="thin start"
 
 alias dbtp="rake db:test:prepare"
 alias dbm="rake db:migrate"
@@ -152,9 +147,24 @@ alias tld="tail -f log/development.log"
 alias tlt="tail -f log/test.log"
 alias tlp="tail -f log/production.log"
 
+# Rails 2
+alias sc="./script/console"
+alias sg="./script/generate"
+alias sd="./script/destroy"
+alias sp="./script/plugin"
+alias ss="./script/server"
+alias ssu="./script/server -u"
+alias ssp="./script/server -e production"
+alias ssc="./script/server -p 3001 -e test"
 
+# Rails 3
+alias rg="rails generate"
+alias rg="rails destroy"
+alias rp="rails plugin"
+alias rc="rails console"
+alias rs="rails server"
+alias rsp="rails server -e production"
 
 # BDD
-alias rs="rake spec"
 alias rsa="rake spec:acceptance"
 alias wr="bundle exec watchr rspec.watchr"

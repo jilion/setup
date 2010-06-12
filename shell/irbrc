@@ -4,7 +4,7 @@
 # = Configs =
 # ===========
  
-%w[irb/completion rubygems looksee/shortcuts wirble].each do |gem|
+%w[rubygems wirble pp].each do |gem|
   begin
     require gem
   rescue LoadError => err
@@ -15,12 +15,6 @@ end
 Wirble.init
 Wirble.colorize
 
-# require 'irb/completion'
-# require 'irb/ext/save-history'
-# ARGV.concat [ "--readline", "--prompt-mode", "simple" ]
-# IRB.conf[:SAVE_HISTORY] = 100
-# IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb-save-history" 
- 
 # =======================
 # = Convenience methods =
 # =======================
@@ -35,7 +29,16 @@ alias e exit
 def r; reload! end
 
 # print SQL to STDOUT
-if ENV.include?('RAILS_ENV') && !Object.const_defined?('RAILS_DEFAULT_LOGGER')
-  require 'logger'
-  RAILS_DEFAULT_LOGGER = Logger.new(STDOUT)
+# Rails 2
+if ENV.include?('RAILS_ENV')
+  unless Object.const_defined?('RAILS_DEFAULT_LOGGER')
+    require 'logger'
+    Object.const_set('RAILS_DEFAULT_LOGGER', Logger.new(STDOUT))
+  end
+# Rails 3
+elsif defined?(Rails)
+  if Rails.logger
+    Rails.logger = Logger.new(STDOUT)
+    ActiveRecord::Base.logger = Rails.logger
+  end
 end
