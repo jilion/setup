@@ -156,7 +156,7 @@ alias ssc="./script/server -p 3001 -e test"
 
 # Rails 3
 alias rg="rails generate"
-alias rg="rails destroy"
+alias rd="rails destroy"
 alias rp="rails plugin"
 alias rc="rails console"
 alias rs="rails server"
