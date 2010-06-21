@@ -116,6 +116,7 @@ alias bir='bundle install --relock'
 alias bl='bundle lock'
 alias bp='bundle package'
 alias bs='bundle show'
+alias bo='bundle open'
 
 # open_gem
 alias go="gem open --latest"
