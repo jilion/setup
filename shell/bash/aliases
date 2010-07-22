@@ -21,7 +21,7 @@ alias jb="cd $JILION_PATH/Products/Jilion.com/blog.jilion.com; clear"
 alias sb="cd $JILION_PATH/Products/Jilion.com/sublime; clear"
 alias sv="cd $JILION_PATH/Products/SublimeVideo/sublime_video; clear"
 alias msv="cd $JILION_PATH/Products/SublimeVideo/my.sublimevideo.net; clear"
-alias nsv="cd $JILION_PATH/Products/SublimeVideo/notify.sublimevideo.net; clear"
+alias svs="cd $JILION_PATH/Products/SublimeVideo/sublimevideo.net; clear" # sublime video site
 
 # Common -- Some are from Damian Conway
 alias l="ls -lh"
