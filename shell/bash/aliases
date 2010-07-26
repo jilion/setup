@@ -150,23 +150,49 @@ alias tld="tail -f log/development.log"
 alias tlt="tail -f log/test.log"
 alias tlp="tail -f log/production.log"
 
+# Rails universal
+function ss {
+  if [ -e script/rails ]; then
+    script/rails server $@
+  else
+    script/server $@
+  fi
+}
+function ssp {
+  if [ -e script/rails ]; then
+    script/rails server -e production $@
+  else
+    script/server -e production $@
+  fi
+}
+function sc {
+  if [ -e script/rails ]; then
+    script/rails console $@
+  else
+    script/console $@
+  fi
+}
+function sg {
+  if [ -e script/rails ]; then
+    script/rails generate $@
+  else
+    script/generate $@
+  fi
+}
+
 # Rails 2
-alias sc="./script/console"
-alias sg="./script/generate"
 alias sd="./script/destroy"
 alias sp="./script/plugin"
-alias ss="./script/server"
 alias ssu="./script/server -u"
-alias ssp="./script/server -e production"
 alias ssc="./script/server -p 3001 -e test"
 
 # Rails 3
-alias rg="rails generate"
+alias rg="sg"
 alias rd="rails destroy"
 alias rp="rails plugin"
-alias rc="rails console"
-alias rs="rails server"
-alias rsp="rails server -e production"
+alias rc="sc"
+alias rs="ss"
+alias rsp="ssp"
 
 # BDD
 alias rsa="rake spec:acceptance"
