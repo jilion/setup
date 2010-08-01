@@ -13,9 +13,9 @@ alias ju="cd $JIME_CODE_PATH/upload; clear"
 alias jl="cd $JIME_CODE_PATH/locations; clear"
 
 # Jilion 
-alias wd="cd $JILION_PATH/Customers/Mnemis/webdoc; clear"
-alias ca="cd $JILION_PATH/Customers/Caprices/caprices; clear"
-alias mi="cd $JILION_PATH/Customers/Mintt/mintt; clear"
+alias wd="cd $JILION_PATH/Clients/Mnemis/webdoc; clear"
+alias ca="cd $JILION_PATH/Clients/Caprices/caprices; clear"
+alias mi="cd $JILION_PATH/Clients/Mintt/mintt; clear"
 alias ji="cd $JILION_PATH/Products/Jilion.com/jilion.com; clear"
 alias jb="cd $JILION_PATH/Products/Jilion.com/blog.jilion.com; clear"
 alias sb="cd $JILION_PATH/Products/Jilion.com/sublime; clear"
