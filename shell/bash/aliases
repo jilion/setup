@@ -113,12 +113,13 @@ alias gi="gem install"
 alias gui="gem uninstall"
 
 # bundler
+alias be='bundle exec'
 alias bi='bundle install'
-alias bir='bundle install --relock'
 alias bl='bundle lock'
+alias bo='bundle open'
 alias bp='bundle package'
 alias bs='bundle show'
-alias bo='bundle open'
+alias bu='bundle update'
 
 # open_gem
 alias go="gem open --latest"
