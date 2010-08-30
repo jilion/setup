@@ -16,12 +16,14 @@ alias jl="cd $JIME_CODE_PATH/locations; clear"
 alias wd="cd $JILION_PATH/Clients/Mnemis/webdoc; clear"
 alias ca="cd $JILION_PATH/Clients/Caprices/caprices; clear"
 alias mi="cd $JILION_PATH/Clients/Mintt/mintt; clear"
+alias hb="cd $JILION_PATH/Products/HerokuBackups/heroku_backups; clear"
 alias ji="cd $JILION_PATH/Products/Jilion.com/jilion.com; clear"
 alias jb="cd $JILION_PATH/Products/Jilion.com/blog.jilion.com; clear"
 alias sb="cd $JILION_PATH/Products/Jilion.com/sublime; clear"
 alias sv="cd $JILION_PATH/Products/SublimeVideo/sublime_video; clear"
 alias msv="cd $JILION_PATH/Products/SublimeVideo/my.sublimevideo.net; clear"
 alias dsv="cd $JILION_PATH/Products/SublimeVideo/docs.sublimevideo.net; clear"
+alias ssv="cd $JILION_PATH/Products/SublimeVideo/status.sublimevideo.net; clear"
 alias svs="cd $JILION_PATH/Products/SublimeVideo/sublimevideo.net; clear" # sublime video site
 
 # Common -- Some are from Damian Conway
