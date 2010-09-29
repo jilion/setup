@@ -146,7 +146,7 @@ alias dbr="rake db:drop:all
            rake db:migrate
            rake db:test:prepare
            rake db:seed
-           annotate -i -r"
+           annotate -i"
 
 alias dbp="rake db:populate"
 
