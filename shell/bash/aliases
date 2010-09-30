@@ -121,7 +121,7 @@ alias gui="gem uninstall"
 # bundler
 alias be='bundle exec'
 alias bi='bundle install'
-alias bl='bundle lock'
+alias bl='bundle list'
 alias bo='bundle open'
 alias bp='bundle package'
 alias bs='bundle show'
