@@ -156,6 +156,7 @@ alias tl="tail -f log/*.log"
 alias tld="tail -f log/development.log"
 alias tlt="tail -f log/test.log"
 alias tlp="tail -f log/production.log"
+alias tlpa="tail -f log/passenger.3000.log"
 
 # Rails universal
 function ss {
