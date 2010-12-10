@@ -19,6 +19,7 @@ alias mi="cd $JILION_PATH/Clients/Mintt/mintt; clear"
 alias si="cd $JILION_PATH/Clients/NagraVision/social_id; clear"
 
 alias hb="cd $JILION_PATH/Products/HerokuBackups/heroku_backups; clear"
+alias fb="cd $JILION_PATH/Products/FreckleBackups/freckle_backups; clear"
 alias sm="cd $JILION_PATH/Products/SublimeMeteo; clear"
 alias ji="cd $JILION_PATH/Products/Jilion.com/jilion.com; clear"
 alias jb="cd $JILION_PATH/Products/Jilion.com/blog.jilion.com; clear"
