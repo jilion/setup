@@ -16,7 +16,10 @@ alias jl="cd $JIME_CODE_PATH/locations; clear"
 alias wd="cd $JILION_PATH/Clients/Mnemis/webdoc; clear"
 alias ca="cd $JILION_PATH/Clients/Caprices/caprices; clear"
 alias mi="cd $JILION_PATH/Clients/Mintt/mintt; clear"
+alias si="cd $JILION_PATH/Clients/NagraVision/social_id; clear"
+
 alias hb="cd $JILION_PATH/Products/HerokuBackups/heroku_backups; clear"
+alias sm="cd $JILION_PATH/Products/SublimeMeteo; clear"
 alias ji="cd $JILION_PATH/Products/Jilion.com/jilion.com; clear"
 alias jb="cd $JILION_PATH/Products/Jilion.com/blog.jilion.com; clear"
 alias sb="cd $JILION_PATH/Products/Jilion.com/sublime; clear"
@@ -68,6 +71,7 @@ function gg() {
 alias gco="git checkout"
 alias gd="git diff"
 alias gdm="git diff master"
+alias gdt="git difftool"
 alias gl="git pull"
 alias glo="git pull origin"
 alias gnp="git-notpushed"
@@ -156,6 +160,7 @@ alias tl="tail -f log/*.log"
 alias tld="tail -f log/development.log"
 alias tlt="tail -f log/test.log"
 alias tlp="tail -f log/production.log"
+alias tlpa="tail -f log/passenger.3000.log"
 
 # Rails universal
 function ss {
