@@ -16,7 +16,7 @@ alias jl="cd $JIME_CODE_PATH/locations; clear"
 alias wd="cd $JILION_PATH/Clients/Mnemis/webdoc; clear"
 alias ca="cd $JILION_PATH/Clients/Caprices/caprices; clear"
 alias mi="cd $JILION_PATH/Clients/Mintt/mintt; clear"
-alias si="cd $JILION_PATH/Clients/NagraVision/social_id; clear"
+alias wc="cd $JILION_PATH/Clients/NagraVision/we_crypt; clear"
 
 alias hb="cd $JILION_PATH/Products/HerokuBackups/heroku_backups; clear"
 alias fb="cd $JILION_PATH/Products/FreckleBackups/freckle_backups; clear"
@@ -136,6 +136,9 @@ alias bu='bundle update'
 alias go="gem open --latest"
 alias gr="gem read --latest"
 
+# guard
+alias bg="bundle exec guard"
+alias bgc="bundle exec guard -c"
 
 # =========
 # = Rails =
