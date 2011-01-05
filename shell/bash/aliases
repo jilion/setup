@@ -12,7 +12,7 @@ alias ju="cd $JIME_CODE_PATH/upload; clear"
 # alias jb="cd $JIME_CODE_PATH/backstage; clear"
 alias jl="cd $JIME_CODE_PATH/locations; clear"
 
-# Jilion 
+# Jilion
 alias wd="cd $JILION_PATH/Clients/Mnemis/webdoc; clear"
 alias ca="cd $JILION_PATH/Clients/Caprices/caprices; clear"
 alias mi="cd $JILION_PATH/Clients/Mintt/mintt; clear"
@@ -41,13 +41,13 @@ alias ..="cd .."
 alias cd..="cd .."
 
 # Function
-function take() { 
+function take() {
   mkdir -p "$1"
-  cd "$1" 
+  cd "$1"
 }
 alias k9="killall -9"
-function killnamed () { 
-  ps ax | grep $1 | cut -d ' ' -f 2 | xargs kill 
+function killnamed () {
+  ps ax | grep $1 | cut -d ' ' -f 2 | xargs kill
 }
 function zipr() {
   zip -r $1.zip $1
@@ -66,7 +66,7 @@ alias gba="git branch -a"
 alias gc="git commit -v"
 alias gca="git commit -v -a"
 # Commit pending changes and quote all args as message
-function gg() { 
+function gg() {
   git commit -v -a -m "$*"
 }
 alias gco="git checkout"
@@ -90,13 +90,13 @@ function gch() {
 }
 
 # Setup a tracking branch from [remote] [branch_name]
-function gbt() { 
-  git branch --track $2 $1/$2 && git checkout $2 
+function gbt() {
+  git branch --track $2 $1/$2 && git checkout $2
 }
 # Quickly clobber a file and checkout
-function grf() { 
+function grf() {
   rm $1
-  git checkout $1 
+  git checkout $1
 }
 # Call from inside an initialized Git repo, with the name of the repo.
 function new-git() {
@@ -139,6 +139,9 @@ alias gr="gem read --latest"
 # guard
 alias bg="bundle exec guard"
 alias bgc="bundle exec guard -c"
+
+# passenger
+alias pgs="passenger start"
 
 # =========
 # = Rails =
