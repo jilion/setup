@@ -5,29 +5,30 @@ alias reload="source $JIME_SETUP_PATH/shell/bash/aliases"
 alias ea="mate -w $JIME_SETUP_PATH/shell/bash/aliases && reload" # Edit aliases
 
 # Jime
-alias js="cd $JIME_SETUP_PATH; clear"
-alias jj="cd $JIME_CODE_PATH/Jime.com; clear"
-alias jf="cd $JIME_CODE_PATH/Jime.org; clear"
-alias ju="cd $JIME_CODE_PATH/upload; clear"
-# alias jb="cd $JIME_CODE_PATH/backstage; clear"
-alias jl="cd $JIME_CODE_PATH/locations; clear"
+alias js="cd $JIME_SETUP_PATH"
+alias jj="cd $JIME_CODE_PATH/Jime.com"
+alias jf="cd $JIME_CODE_PATH/Jime.org"
+alias ju="cd $JIME_CODE_PATH/upload"
+# alias jb="cd $JIME_CODE_PATH/backstage"
+alias jl="cd $JIME_CODE_PATH/locations"
 
-# Jilion 
-alias wd="cd $JILION_PATH/Clients/Mnemis/webdoc; clear"
-alias ca="cd $JILION_PATH/Clients/Caprices/caprices; clear"
-alias mi="cd $JILION_PATH/Clients/Mintt/mintt; clear"
-alias wc="cd $JILION_PATH/Clients/NagraVision/we_crypt; clear"
+# Jilion
+alias wd="cd $JILION_PATH/Clients/Mnemis/webdoc"
+alias ca="cd $JILION_PATH/Clients/Caprices/caprices"
+alias mi="cd $JILION_PATH/Clients/Mintt/mintt"
+alias wc="cd $JILION_PATH/Clients/NagraVision/we_crypt"
 
-alias hb="cd $JILION_PATH/Products/HerokuBackups/heroku_backups; clear"
-alias sm="cd $JILION_PATH/Products/SublimeMeteo; clear"
-alias ji="cd $JILION_PATH/Products/Jilion.com/jilion.com; clear"
-alias jb="cd $JILION_PATH/Products/Jilion.com/blog.jilion.com; clear"
-alias sb="cd $JILION_PATH/Products/Jilion.com/sublime; clear"
-alias sv="cd $JILION_PATH/Products/SublimeVideo/sublime_video; clear"
-alias msv="cd $JILION_PATH/Products/SublimeVideo/my.sublimevideo.net; clear"
-alias dsv="cd $JILION_PATH/Products/SublimeVideo/docs.sublimevideo.net; clear"
-alias ssv="cd $JILION_PATH/Products/SublimeVideo/status.sublimevideo.net; clear"
-alias svs="cd $JILION_PATH/Products/SublimeVideo/sublimevideo.net; clear" # sublime video site
+alias hb="cd $JILION_PATH/Products/HerokuBackups/heroku_backups"
+alias fb="cd $JILION_PATH/Products/FreckleBackups/freckle_backups"
+alias sm="cd $JILION_PATH/Products/SublimeMeteo"
+alias ji="cd $JILION_PATH/Products/Jilion.com/jilion.com"
+alias jb="cd $JILION_PATH/Products/Jilion.com/blog.jilion.com"
+alias sb="cd $JILION_PATH/Products/Jilion.com/sublime"
+alias sv="cd $JILION_PATH/Products/SublimeVideo/sublime_video"
+alias msv="cd $JILION_PATH/Products/SublimeVideo/my.sublimevideo.net"
+alias dsv="cd $JILION_PATH/Products/SublimeVideo/docs.sublimevideo.net;"
+alias ssv="cd $JILION_PATH/Products/SublimeVideo/status.sublimevideo.net"
+alias svs="cd $JILION_PATH/Products/SublimeVideo/sublimevideo.net" # sublime video site
 
 # Common -- Some are from Damian Conway
 alias l="ls -lh"
@@ -40,13 +41,13 @@ alias ..="cd .."
 alias cd..="cd .."
 
 # Function
-function take() { 
+function take() {
   mkdir -p "$1"
-  cd "$1" 
+  cd "$1"
 }
 alias k9="killall -9"
-function killnamed () { 
-  ps ax | grep $1 | cut -d ' ' -f 2 | xargs kill 
+function killnamed () {
+  ps ax | grep $1 | cut -d ' ' -f 2 | xargs kill
 }
 function zipr() {
   zip -r $1.zip $1
@@ -65,12 +66,13 @@ alias gba="git branch -a"
 alias gc="git commit -v"
 alias gca="git commit -v -a"
 # Commit pending changes and quote all args as message
-function gg() { 
+function gg() {
   git commit -v -a -m "$*"
 }
 alias gco="git checkout"
 alias gd="git diff"
 alias gdm="git diff master"
+alias gdt="git difftool"
 alias gl="git pull"
 alias glo="git pull origin"
 alias gnp="git-notpushed"
@@ -88,13 +90,13 @@ function gch() {
 }
 
 # Setup a tracking branch from [remote] [branch_name]
-function gbt() { 
-  git branch --track $2 $1/$2 && git checkout $2 
+function gbt() {
+  git branch --track $2 $1/$2 && git checkout $2
 }
 # Quickly clobber a file and checkout
-function grf() { 
+function grf() {
   rm $1
-  git checkout $1 
+  git checkout $1
 }
 # Call from inside an initialized Git repo, with the name of the repo.
 function new-git() {
@@ -134,6 +136,12 @@ alias bu='bundle update'
 alias go="gem open --latest"
 alias gr="gem read --latest"
 
+# guard
+alias bg="bundle exec guard"
+alias bgc="bundle exec guard -c"
+
+# passenger
+alias pgs="passenger start"
 
 # =========
 # = Rails =
