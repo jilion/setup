@@ -13,10 +13,7 @@ alias ju="cd $JIME_CODE_PATH/upload"
 alias jl="cd $JIME_CODE_PATH/locations"
 
 # Jilion
-alias wd="cd $JILION_PATH/Clients/Mnemis/webdoc"
-alias ca="cd $JILION_PATH/Clients/Caprices/caprices"
 alias mi="cd $JILION_PATH/Clients/Mintt/mintt"
-alias wc="cd $JILION_PATH/Clients/NagraVision/we_crypt"
 
 alias hb="cd $JILION_PATH/Products/HerokuBackups/heroku_backups"
 alias fb="cd $JILION_PATH/Products/FreckleBackups/freckle_backups"
@@ -113,7 +110,7 @@ function new-git() {
 alias m="mate"
 alias m.="mate ."
 alias mm="mate ."
-alias mr="mate app config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec rspec.watchr features test todo todo.todo tools Rakefile README CHANGELOG cucumber.yml .gitignore .gems .git/config config.ru Gemfile Guardfile"
+alias mr="mate app bin config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec rspec.watchr features test todo todo.todo tools Rakefile README.* CHANGELOG.* cucumber.yml .gitignore .gems .git/config config.ru Gemfile *.gemspec Guardfile"
 
 # Ruby
 alias r="rake"
