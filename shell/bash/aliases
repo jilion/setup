@@ -11,6 +11,7 @@ alias jf="cd $JIME_CODE_PATH/Jime.org"
 alias ju="cd $JIME_CODE_PATH/upload"
 # alias jb="cd $JIME_CODE_PATH/backstage"
 alias jl="cd $JIME_CODE_PATH/locations"
+alias gol="cd $JIME_CODE_PATH/gollum"
 
 # Jilion
 alias wd="cd $JILION_PATH/Clients/Mnemis/webdoc"
@@ -23,12 +24,15 @@ alias fb="cd $JILION_PATH/Products/FreckleBackups/freckle_backups"
 alias sm="cd $JILION_PATH/Products/SublimeMeteo"
 alias ji="cd $JILION_PATH/Products/Jilion.com/jilion.com"
 alias jb="cd $JILION_PATH/Products/Jilion.com/blog.jilion.com"
+
 alias sb="cd $JILION_PATH/Products/Jilion.com/sublime"
 alias sv="cd $JILION_PATH/Products/SublimeVideo/sublime_video"
 alias msv="cd $JILION_PATH/Products/SublimeVideo/my.sublimevideo.net"
 alias dsv="cd $JILION_PATH/Products/SublimeVideo/docs.sublimevideo.net;"
 alias ssv="cd $JILION_PATH/Products/SublimeVideo/status.sublimevideo.net"
 alias svs="cd $JILION_PATH/Products/SublimeVideo/sublimevideo.net" # sublime video site
+
+alias aea="cd $JILION_PATH/Products/Aelios/aeliosapp.com" # Aelios site
 
 # Common -- Some are from Damian Conway
 alias l="ls -lh"
@@ -112,7 +116,7 @@ function new-git() {
 alias m="mate"
 alias m.="mate ."
 alias mm="mate ."
-alias mr="mate app config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec rspec.watchr features test todo todo.todo tools Rakefile README CHANGELOG cucumber.yml .gitignore .gems .git/config config.ru Gemfile Guardfile"
+alias mr="mate app bin config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec rspec.watchr features test todo todo.todo tools Rakefile LICENSE README.* CHANGELOG cucumber.yml .gitignore *.gemspec .gems .git/config config.ru Gemfile Guardfile"
 
 # Ruby
 alias r="rake"
