@@ -4,7 +4,8 @@
 # = Configs =
 # ===========
  
-%w[rubygems wirble pp].each do |gem|
+# %w[rubygems wirble pp].each do |gem|
+%w[rubygems pp].each do |gem|
   begin
     require gem
   rescue LoadError => err
@@ -12,8 +13,8 @@
   end
 end
 
-Wirble.init
-Wirble.colorize
+# Wirble.init
+# Wirble.colorize
 
 # =======================
 # = Convenience methods =

@@ -1,0 +1,65 @@
+# Please put the content of this file in ~/.gitignore
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+
+# OS generated files #
+######################
+*.rbc
+*.swp
+*~
+.#*
+.DS_Store
+.Trashes
+.com.apple.timemachine.supported
+.fseventsd
+Desktop DB
+Desktop DF
+._*ehthumbs.db
+Icon
+Thumbs.db
+
+# Special folders #
+###################
+bin/
+log/
+pkg/
+tmp/
+
+# Passenger #
+#############
+passenger*.lock
+
+# Bundler #
+###########
+.bundle
+
+# Capybara #
+############
+capybara-*.html
