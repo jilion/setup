@@ -101,14 +101,14 @@ function grf() {
   git checkout $1
 }
 # Call from inside an initialized Git repo, with the name of the repo.
-function new-git() {
-  ssh git@example.com "mkdir $1.git && cd $1.git && git --bare init"
-  git remote add origin git@example.com:$1.git
-  git push origin master
-  git config branch.master.remote origin
-  git config branch.master.merge refs/heads/master
-  git config push.default current
-}
+# function new-git() {
+#   ssh git@example.com "mkdir $1.git && cd $1.git && git --bare init"
+#   git remote add origin git@example.com:$1.git
+#   git push origin master
+#   git config branch.master.remote origin
+#   git config branch.master.merge refs/heads/master
+#   git config push.default current
+# }
 
 # TextMate
 alias m="mate"
