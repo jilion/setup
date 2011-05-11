@@ -138,6 +138,10 @@ alias bp='bundle package'
 alias bs='bundle show'
 alias bu='bundle update'
 
+# powder
+alias pl='powder link'
+alias po='powder open'
+
 # open_gem
 alias go="gem open --latest"
 alias gr="gem read --latest"
