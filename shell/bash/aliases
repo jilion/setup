@@ -31,7 +31,7 @@ alias ssv="cd $JILION_PATH/Products/SublimeVideo/status.sublimevideo.net"
 alias svs="cd $JILION_PATH/Products/SublimeVideo/sublimevideo.net" # sublime video site
 
 alias aea="cd $JILION_PATH/Products/Aelios/aeliosapp.com" # Aelios site
-alias dea="cd $JILION_PATH/Products/Aelios/data.aeliosapp.com" # Aelios data
+alias dae="cd $JILION_PATH/Products/Aelios/data.aeliosapp.com" # Aelios data
 
 # Common -- Some are from Damian Conway
 alias l="ls -lh"
