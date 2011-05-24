@@ -18,7 +18,6 @@ alias mi="cd $JILION_PATH/Clients/Mintt/mintt"
 
 alias hb="cd $JILION_PATH/Products/HerokuBackups/heroku_backups"
 alias fb="cd $JILION_PATH/Products/FreckleBackups/freckle_backups"
-alias sm="cd $JILION_PATH/Products/SublimeMeteo"
 alias dn="cd $JILION_PATH/Products/Ding"
 alias ji="cd $JILION_PATH/Products/Jilion.com/jilion.com"
 alias jb="cd $JILION_PATH/Products/Jilion.com/blog.jilion.com"
@@ -30,6 +29,7 @@ alias dsv="cd $JILION_PATH/Products/SublimeVideo/docs.sublimevideo.net;"
 alias ssv="cd $JILION_PATH/Products/SublimeVideo/status.sublimevideo.net"
 alias svs="cd $JILION_PATH/Products/SublimeVideo/sublimevideo.net" # sublime video site
 
+alias ae="cd $JILION_PATH/Products/Aelios/aelios" # Aelios app
 alias aea="cd $JILION_PATH/Products/Aelios/aeliosapp.com" # Aelios site
 alias dae="cd $JILION_PATH/Products/Aelios/data.aeliosapp.com" # Aelios data
 alias aae="cd $JILION_PATH/Products/Aelios/admin.aeliosapp.com" # Aelios admin
