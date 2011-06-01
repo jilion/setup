@@ -39,7 +39,7 @@ alias l="ls -lh"
 alias la="ls -lah"
 alias ll="la"
 
-alias h="history"
+alias hi="history"
 alias o="open ."
 alias ..="cd .."
 alias cd..="cd .."
@@ -143,6 +143,9 @@ alias bu='bundle update'
 # powder
 alias pl='powder link'
 alias po='powder open'
+
+# heroku
+alias h='heroku'
 
 # open_gem
 alias go="gem open --latest"
