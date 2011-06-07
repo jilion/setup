@@ -19,7 +19,6 @@ alias mi="cd $JILION_PATH/Clients/Mintt/mintt"
 alias ba="cd $JILION_PATH/Products/backups"
 alias hb="cd $JILION_PATH/Products/HerokuBackups/heroku_backups"
 alias fb="cd $JILION_PATH/Products/FreckleBackups/freckle_backups"
-alias sm="cd $JILION_PATH/Products/SublimeMeteo"
 alias dn="cd $JILION_PATH/Products/Ding"
 alias ji="cd $JILION_PATH/Products/Jilion.com/jilion.com"
 alias jb="cd $JILION_PATH/Products/Jilion.com/blog.jilion.com"
@@ -31,6 +30,7 @@ alias dsv="cd $JILION_PATH/Products/SublimeVideo/docs.sublimevideo.net;"
 alias ssv="cd $JILION_PATH/Products/SublimeVideo/status.sublimevideo.net"
 alias svs="cd $JILION_PATH/Products/SublimeVideo/sublimevideo.net" # sublime video site
 
+alias ae="cd $JILION_PATH/Products/Aelios/aelios" # Aelios app
 alias aea="cd $JILION_PATH/Products/Aelios/aeliosapp.com" # Aelios site
 alias dae="cd $JILION_PATH/Products/Aelios/data.aeliosapp.com" # Aelios data
 alias aae="cd $JILION_PATH/Products/Aelios/admin.aeliosapp.com" # Aelios admin
@@ -40,7 +40,7 @@ alias l="ls -lh"
 alias la="ls -lah"
 alias ll="la"
 
-alias h="history"
+alias hi="history"
 alias o="open ."
 alias ..="cd .."
 alias cd..="cd .."
@@ -127,9 +127,9 @@ alias mr="mate app bin config db doc public/javascripts lib lib/tasks done publi
 alias r="rake"
 alias irb="irb --readline -r irb/completion"
 
-# rugygem
-alias gu="gem update"
-alias gi="gem install"
+# rugygems
+alias gu="gem update --no-rdoc --no-ri"
+alias gi="gem install --no-rdoc --no-ri"
 alias gui="gem uninstall"
 
 # bundler
@@ -144,6 +144,9 @@ alias bu='bundle update'
 # powder
 alias pl='powder link'
 alias po='powder open'
+
+# heroku
+alias h='heroku'
 
 # open_gem
 alias go="gem open --latest"
