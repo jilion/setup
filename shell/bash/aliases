@@ -16,6 +16,7 @@ alias gol="cd $JIME_CODE_PATH/gollum"
 # Jilion
 alias mi="cd $JILION_PATH/Clients/Mintt/mintt"
 
+alias ba="cd $JILION_PATH/Products/backups"
 alias hb="cd $JILION_PATH/Products/HerokuBackups/heroku_backups"
 alias fb="cd $JILION_PATH/Products/FreckleBackups/freckle_backups"
 alias sm="cd $JILION_PATH/Products/SublimeMeteo"
