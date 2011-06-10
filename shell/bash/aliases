@@ -133,13 +133,17 @@ alias gi="gem install --no-rdoc --no-ri"
 alias gui="gem uninstall"
 
 # bundler
-alias be='bundle exec'
-alias bi='bundle install'
-alias bl='bundle list'
-alias bo='bundle open'
-alias bp='bundle package'
-alias bs='bundle show'
-alias bu='bundle update'
+# http://ryan.mcgeary.org/2011/02/09/vendor-everything-still-applies/
+alias b="bundle"
+alias bu="b update"
+alias be="b exec"
+alias bl='b list'
+alias bo='b open'
+alias bp='b package'
+alias bs='b show'
+alias bi="b install"
+alias biv="b install --path vendor"
+alias binit="biv && b package && echo 'vendor/ruby' >> .gitignore"
 
 # powder
 alias pl='powder link'
