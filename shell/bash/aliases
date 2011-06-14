@@ -17,8 +17,6 @@ alias gol="cd $JIME_CODE_PATH/gollum"
 alias mi="cd $JILION_PATH/Clients/Mintt/mintt"
 
 alias ba="cd $JILION_PATH/Products/backups"
-alias hb="cd $JILION_PATH/Products/HerokuBackups/heroku_backups"
-alias fb="cd $JILION_PATH/Products/FreckleBackups/freckle_backups"
 alias dn="cd $JILION_PATH/Products/Ding"
 alias ji="cd $JILION_PATH/Products/Jilion.com/jilion.com"
 alias jb="cd $JILION_PATH/Products/Jilion.com/blog.jilion.com"
@@ -124,7 +122,7 @@ alias mm="mate ."
 alias mr="mate app bin config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec rspec.watchr features test todo todo.todo tools Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore *.gemspec .gems .git/config config.ru Gemfile Guardfile Procfile"
 
 # Ruby
-alias r="rake"
+alias r="be rake"
 alias irb="irb --readline -r irb/completion"
 
 # rugygems
@@ -157,8 +155,8 @@ alias go="gem open --latest"
 alias gr="gem read --latest"
 
 # guard
-alias bg="bundle exec guard"
-alias bgc="bundle exec guard -c"
+alias bg="be guard"
+alias bgc="be guard -c"
 
 # passenger
 alias pgs="passenger start"
@@ -168,18 +166,18 @@ alias pgs="passenger start"
 # =========
 
 alias ttr="touch tmp/restart.txt"
-alias rr="rake routes"
+alias rr="be rake routes"
 
-alias dbtp="rake db:test:prepare"
-alias dbm="rake db:migrate"
-alias dbr="rake db:drop:all
-           rake db:create:all
-           rake db:migrate
-           rake db:test:prepare
-           rake db:seed
-           annotate -i"
+alias dbtp="be rake db:test:prepare"
+alias dbm="be rake db:migrate"
+alias dbr="be rake db:drop:all
+           be rake db:create:all
+           be rake db:migrate
+           be rake db:test:prepare
+           be rake db:seed
+           be annotate -i"
 
-alias dbp="rake db:populate"
+alias dbp="be rake db:populate"
 
 alias dbrp="dbr && dbp"
 
