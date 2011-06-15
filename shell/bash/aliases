@@ -26,6 +26,7 @@ alias sv="cd $JILION_PATH/Products/SublimeVideo/sublime_video"
 alias msv="cd $JILION_PATH/Products/SublimeVideo/my.sublimevideo.net"
 alias dsv="cd $JILION_PATH/Products/SublimeVideo/docs.sublimevideo.net;"
 alias ssv="cd $JILION_PATH/Products/SublimeVideo/status.sublimevideo.net"
+alias asv="cd $JILION_PATH/Products/SublimeVideo/data.sublimevideo.net"
 alias svs="cd $JILION_PATH/Products/SublimeVideo/sublimevideo.net" # sublime video site
 
 alias ae="cd $JILION_PATH/Products/Aelios/aelios" # Aelios app
