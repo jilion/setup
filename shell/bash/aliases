@@ -16,28 +16,31 @@ alias gol="cd $JIME_CODE_PATH/gollum"
 # Jilion
 alias mi="cd $JILION_PATH/Clients/Mintt/mintt"
 
-alias hb="cd $JILION_PATH/Products/HerokuBackups/heroku_backups"
-alias fb="cd $JILION_PATH/Products/FreckleBackups/freckle_backups"
-alias sm="cd $JILION_PATH/Products/SublimeMeteo"
+alias ba="cd $JILION_PATH/Products/backups"
 alias dn="cd $JILION_PATH/Products/Ding"
 alias ji="cd $JILION_PATH/Products/Jilion.com/jilion.com"
 alias jb="cd $JILION_PATH/Products/Jilion.com/blog.jilion.com"
 
 alias sb="cd $JILION_PATH/Products/Jilion.com/sublime"
 alias sv="cd $JILION_PATH/Products/SublimeVideo/sublime_video"
+alias psv="cd $JILION_PATH/Products/SublimeVideo/sv_cms_plugins"
 alias msv="cd $JILION_PATH/Products/SublimeVideo/my.sublimevideo.net"
 alias dsv="cd $JILION_PATH/Products/SublimeVideo/docs.sublimevideo.net;"
 alias ssv="cd $JILION_PATH/Products/SublimeVideo/status.sublimevideo.net"
+alias asv="cd $JILION_PATH/Products/SublimeVideo/data.sublimevideo.net"
 alias svs="cd $JILION_PATH/Products/SublimeVideo/sublimevideo.net" # sublime video site
 
+alias ae="cd $JILION_PATH/Products/Aelios/aelios" # Aelios app
 alias aea="cd $JILION_PATH/Products/Aelios/aeliosapp.com" # Aelios site
+alias dae="cd $JILION_PATH/Products/Aelios/data.aeliosapp.com" # Aelios data
+alias aae="cd $JILION_PATH/Products/Aelios/admin.aeliosapp.com" # Aelios admin
 
 # Common -- Some are from Damian Conway
 alias l="ls -lh"
 alias la="ls -lah"
 alias ll="la"
 
-alias h="history"
+alias hi="history"
 alias o="open ."
 alias ..="cd .."
 alias cd..="cd .."
@@ -118,38 +121,45 @@ function grf() {
 alias m="mate"
 alias m.="mate ."
 alias mm="mate ."
-alias mr="mate app bin config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec features test todo todo.todo tools Rakefile LICENSE README.* CHANGELOG cucumber.yml .travis.yml .gitignore *.gemspec .gems .git/config config.ru Gemfile Guardfile"
+alias mr="mate app bin config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec features test todo todo.todo tools Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore *.gemspec .gems .git/config config.ru Gemfile Guardfile Procfile"
 alias mg="mate bin config doc lib lib/tasks spec features test Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore *.gemspec .gems .git/config config.ru Gemfile Guardfile"
 
 # Ruby
-alias r="rake"
+alias r="be rake"
 alias irb="irb --readline -r irb/completion"
 
-# rugygem
-alias gu="gem update"
-alias gi="gem install"
+# rugygems
+alias gu="gem update --no-rdoc --no-ri"
+alias gi="gem install --no-rdoc --no-ri"
 alias gui="gem uninstall"
 
 # bundler
-alias be='bundle exec'
-alias bi='bundle install'
-alias bl='bundle list'
-alias bo='bundle open'
-alias bp='bundle package'
-alias bs='bundle show'
-alias bu='bundle update'
+# http://ryan.mcgeary.org/2011/02/09/vendor-everything-still-applies/
+alias b="bundle"
+alias bu="b update"
+alias be="b exec"
+alias bl='b list'
+alias bo='b open'
+alias bp='b package'
+alias bs='b show'
+alias bi="b install"
+alias biv="b install --path vendor"
+alias binit="biv && b package && echo 'vendor/ruby' >> .gitignore"
 
 # powder
 alias pl='powder link'
 alias po='powder open'
+
+# heroku
+alias h='heroku'
 
 # open_gem
 alias go="gem open --latest"
 alias gr="gem read --latest"
 
 # guard
-alias bg="bundle exec guard"
-alias bgc="bundle exec guard -c"
+alias bg="be guard"
+alias bgc="be guard -c"
 
 # passenger
 alias pgs="passenger start"
@@ -159,18 +169,18 @@ alias pgs="passenger start"
 # =========
 
 alias ttr="touch tmp/restart.txt"
-alias rr="rake routes"
+alias rr="be rake routes"
 
-alias dbtp="rake db:test:prepare"
-alias dbm="rake db:migrate"
-alias dbr="rake db:drop:all
-           rake db:create:all
-           rake db:migrate
-           rake db:test:prepare
-           rake db:seed
-           annotate -i"
+alias dbtp="be rake db:test:prepare"
+alias dbm="be rake db:migrate"
+alias dbr="be rake db:drop:all
+           be rake db:create:all
+           be rake db:migrate
+           be rake db:test:prepare
+           be rake db:seed
+           be annotate -i"
 
-alias dbp="rake db:populate"
+alias dbp="be rake db:populate"
 
 alias dbrp="dbr && dbp"
 
