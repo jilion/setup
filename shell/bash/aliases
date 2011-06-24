@@ -23,6 +23,7 @@ alias jb="cd $JILION_PATH/Products/Jilion.com/blog.jilion.com"
 
 alias sb="cd $JILION_PATH/Products/Jilion.com/sublime"
 alias sv="cd $JILION_PATH/Products/SublimeVideo/sublime_video"
+alias psv="cd $JILION_PATH/Products/SublimeVideo/sv_cms_plugins"
 alias msv="cd $JILION_PATH/Products/SublimeVideo/my.sublimevideo.net"
 alias dsv="cd $JILION_PATH/Products/SublimeVideo/docs.sublimevideo.net;"
 alias ssv="cd $JILION_PATH/Products/SublimeVideo/status.sublimevideo.net"
@@ -120,7 +121,8 @@ function grf() {
 alias m="mate"
 alias m.="mate ."
 alias mm="mate ."
-alias mr="mate app bin config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec rspec.watchr features test todo todo.todo tools Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore *.gemspec .gems .git/config config.ru Gemfile Guardfile Procfile"
+alias mr="mate app bin config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec features test todo todo.todo tools Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore *.gemspec .gems .git/config config.ru Gemfile Guardfile Procfile"
+alias mg="mate bin config doc lib lib/tasks spec features test Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore *.gemspec .gems .git/config config.ru Gemfile Guardfile"
 
 # Ruby
 alias r="be rake"
