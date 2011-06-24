@@ -149,7 +149,15 @@ alias pl='powder link'
 alias po='powder open'
 
 # heroku
-alias h='heroku'
+alias h='be heroku'
+alias hl='h logs --tails'
+alias hs='h scale'
+alias ho='h open'
+alias hr='h restart'
+alias ha='h addons'
+alias hc='h config'
+alias hi='h info'
+alias hps='h ps'
 
 # open_gem
 alias go="gem open --latest"
