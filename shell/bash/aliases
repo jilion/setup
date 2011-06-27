@@ -152,7 +152,7 @@ alias po='powder open'
 
 # heroku
 alias h='be heroku'
-alias hl='h logs --tails'
+alias hl='h logs --tail'
 alias hs='h scale'
 alias ho='h open'
 alias hr='h restart'
