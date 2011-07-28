@@ -191,28 +191,21 @@ alias tlp="tail -f log/production.log"
 alias tlpa="tail -f log/passenger.3000.log"
 
 # Rails universal
-function ss {
+function rs {
   if [ -e script/rails ]; then
     script/rails server $@
   else
     script/server $@
   fi
 }
-function ssp {
-  if [ -e script/rails ]; then
-    script/rails server -e production $@
-  else
-    script/server -e production $@
-  fi
-}
-function sc {
+function rc {
   if [ -e script/rails ]; then
     script/rails console $@
   else
     script/console $@
   fi
 }
-function sg {
+function rg {
   if [ -e script/rails ]; then
     script/rails generate $@
   else
@@ -220,20 +213,10 @@ function sg {
   fi
 }
 
-# Rails 2
-alias sd="./script/destroy"
-alias sp="./script/plugin"
-alias ssu="./script/server -u"
-alias ssc="./script/server -p 3001 -e test"
-
 # Rails 3
-alias rg="sg"
 alias rd="rails destroy"
 alias rp="rails plugin"
-alias rc="sc"
-alias rs="ss"
-alias rsp="ssp"
 
 # BDD
-alias rsa="rake spec:acceptance"
-alias wr="bundle exec watchr rspec.watchr"
+alias rsa="be rake spec:acceptance"
+alias rsp="be rake spec:portability"
