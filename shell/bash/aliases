@@ -122,7 +122,7 @@ alias m="mate"
 alias m.="mate ."
 alias mm="mate ."
 alias mr="mate app bin config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec features test todo todo.todo tools Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore *.gemspec .gems .git/config config.ru Gemfile Guardfile Procfile"
-alias mg="mate bin config doc lib lib/tasks spec features test Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore *.gemspec .gems .git/config config.ru Gemfile Guardfile"
+alias mg="mate bin config doc lib lib/tasks man spec features test Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore *.gemspec .gems .git/config config.ru Gemfile Guardfile"
 
 # Ruby
 alias r="be rake"
