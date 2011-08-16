@@ -149,6 +149,7 @@ alias binit="biv && b package && echo 'vendor/ruby' >> .gitignore"
 # powder
 alias pl='powder link'
 alias po='powder open'
+alias pr='powder restart'
 
 # heroku
 alias h='be heroku'
