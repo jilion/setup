@@ -38,7 +38,7 @@ alias aae="cd $JILION_PATH/Products/Aelios/admin.aeliosapp.com" # Aelios admin
 # Common -- Some are from Damian Conway
 alias l="ls -lhF"
 alias la="ls -lahF"
-alias ll="laF"
+alias ll="la"
 
 alias hi="history"
 alias o="open ."
