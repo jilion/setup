@@ -44,4 +44,3 @@ PS1="\u:\w \[$EBLACK\]\$(vcprompt)\[$NO_COLOR\] \n→ "
 
 # Window title
 export PROMPT_COMMAND='echo -ne "\033]0;${HOSTNAME}: ${PWD}\007"'
-
