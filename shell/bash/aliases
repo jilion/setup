@@ -36,9 +36,9 @@ alias dae="cd $JILION_PATH/Products/Aelios/data.aeliosapp.com" # Aelios data
 alias aae="cd $JILION_PATH/Products/Aelios/admin.aeliosapp.com" # Aelios admin
 
 # Common -- Some are from Damian Conway
-alias l="ls -lh"
-alias la="ls -lah"
-alias ll="la"
+alias l="ls -lhF"
+alias la="ls -lahF"
+alias ll="laF"
 
 alias hi="history"
 alias o="open ."
@@ -121,8 +121,8 @@ function grf() {
 alias m="mate"
 alias m.="mate ."
 alias mm="mate ."
-alias mr="mate app bin config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec features test todo todo.todo tools Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore *.gemspec .gems .git/config config.ru Gemfile Guardfile Procfile application.rb"
-alias mg="mate bin config doc lib lib/tasks spec features test Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore *.gemspec .gems .git/config config.ru Gemfile Guardfile"
+alias mr="mate app bin config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec features test todo todo.todo tools Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore .gitconfig *.gemspec .gems .git/config config.ru Gemfile Guardfile Procfile application.rb"
+alias mg="mate bin config doc lib lib/tasks man spec features test Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore *.gemspec .gems .git/config config.ru Gemfile Guardfile"
 
 # Ruby
 alias r="be rake"
@@ -149,6 +149,7 @@ alias binit="biv && b package && echo 'vendor/ruby' >> .gitignore"
 # powder
 alias pl='powder link'
 alias po='powder open'
+alias pr='powder restart'
 
 # heroku
 alias h='be heroku'
