@@ -37,8 +37,8 @@ alias aes="cd $JILION_PATH/Products/Aelios/Web/stats.aeliosapp.com" 	# Aelios st
 alias aen="cd $JILION_PATH/Products/Aelios/Web/admin.aeliosapp.com" 	# Aelios admin
 
 # Common -- Some are from Damian Conway
-alias l="ls -lh"
-alias la="ls -lah"
+alias l="ls -lhF"
+alias la="ls -lahF"
 alias ll="la"
 
 alias hi="history"
@@ -123,8 +123,8 @@ function grf() {
 alias m="mate"
 alias m.="mate ."
 alias mm="mate ."
-alias mr="mate app bin config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec features test todo todo.todo tools Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore *.gemspec .gems .git/config config.ru Gemfile Guardfile Procfile"
-alias mg="mate bin config doc lib lib/tasks spec features test Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore *.gemspec .gems .git/config config.ru Gemfile Guardfile"
+alias mr="mate app bin config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec features test todo todo.todo tools Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore .gitconfig *.gemspec .gems .git/config config.ru Gemfile Guardfile Procfile application.rb"
+alias mg="mate bin config doc lib lib/tasks man spec features test Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore *.gemspec .gems .git/config config.ru Gemfile Guardfile"
 
 # Ruby
 alias r="be rake"
@@ -151,9 +151,18 @@ alias binit="biv && b package && echo 'vendor/ruby' >> .gitignore"
 # powder
 alias pl='powder link'
 alias po='powder open'
+alias pr='powder restart'
 
 # heroku
-alias h='heroku'
+alias h='be heroku'
+alias hl='h logs --tail'
+alias hs='h scale'
+alias ho='h open'
+alias hr='h restart'
+alias ha='h addons'
+alias hc='h config'
+alias hi='h info'
+alias hps='h ps'
 
 # open_gem
 alias go="gem open --latest"
@@ -193,28 +202,21 @@ alias tlp="tail -f log/production.log"
 alias tlpa="tail -f log/passenger.3000.log"
 
 # Rails universal
-function ss {
+function rs {
   if [ -e script/rails ]; then
     script/rails server $@
   else
     script/server $@
   fi
 }
-function ssp {
-  if [ -e script/rails ]; then
-    script/rails server -e production $@
-  else
-    script/server -e production $@
-  fi
-}
-function sc {
+function rc {
   if [ -e script/rails ]; then
     script/rails console $@
   else
     script/console $@
   fi
 }
-function sg {
+function rg {
   if [ -e script/rails ]; then
     script/rails generate $@
   else
@@ -222,20 +224,10 @@ function sg {
   fi
 }
 
-# Rails 2
-alias sd="./script/destroy"
-alias sp="./script/plugin"
-alias ssu="./script/server -u"
-alias ssc="./script/server -p 3001 -e test"
-
 # Rails 3
-alias rg="sg"
 alias rd="rails destroy"
 alias rp="rails plugin"
-alias rc="sc"
-alias rs="ss"
-alias rsp="ssp"
 
 # BDD
-alias rsa="rake spec:acceptance"
-alias wr="bundle exec watchr rspec.watchr"
+alias rsa="be rake spec:acceptance"
+alias rsp="be rake spec:portability"
