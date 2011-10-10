@@ -30,10 +30,11 @@ alias ssv="cd $JILION_PATH/Products/SublimeVideo/status.sublimevideo.net"
 alias asv="cd $JILION_PATH/Products/SublimeVideo/data.sublimevideo.net"
 alias svs="cd $JILION_PATH/Products/SublimeVideo/sublimevideo.net" # sublime video site
 
-alias ae="cd $JILION_PATH/Products/Aelios/aelios" # Aelios app
-alias aea="cd $JILION_PATH/Products/Aelios/aeliosapp.com" # Aelios site
-alias dae="cd $JILION_PATH/Products/Aelios/data.aeliosapp.com" # Aelios data
-alias aae="cd $JILION_PATH/Products/Aelios/admin.aeliosapp.com" # Aelios admin
+alias ae="cd $JILION_PATH/Products/Aelios/iOS/App" 						# Aelios app
+alias aea="cd $JILION_PATH/Products/Aelios/Web/aeliosapp.com" 			# Aelios app site
+alias aep="cd $JILION_PATH/Products/Aelios/Web/api.aeliosapp.com" 		# Aelios api
+alias aes="cd $JILION_PATH/Products/Aelios/Web/stats.aeliosapp.com" 	# Aelios stats
+alias aen="cd $JILION_PATH/Products/Aelios/Web/admin.aeliosapp.com" 	# Aelios admin
 
 # Common -- Some are from Damian Conway
 alias l="ls -lh"
@@ -65,6 +66,7 @@ alias tm="top -o vsize" # memory
 # =======
 # = GIT =
 # =======
+alias gbi="git rev-parse --short HEAD"
 alias ungit="find . -name '.git' -exec rm -rf {} \;"
 alias gb="git branch"
 alias gba="git branch -a"
