@@ -124,6 +124,9 @@ alias mm="mate ."
 alias mr="mate app bin config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec features test todo todo.todo tools Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore .gitconfig *.gemspec .gems .git/config config.ru Gemfile Guardfile Procfile application.rb"
 alias mg="mate bin config doc lib lib/tasks man spec features test Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore *.gemspec .gems .git/config config.ru Gemfile Guardfile"
 
+# Mou
+alias mmd='open -a Mou'
+
 # Ruby
 alias r="be rake"
 alias irb="irb --readline -r irb/completion"
