@@ -25,6 +25,7 @@ alias sb="cd $JILION_PATH/Products/Jilion.com/sublime"
 alias sv="cd $JILION_PATH/Products/SublimeVideo/sublime_video"
 alias psv="cd $JILION_PATH/Products/SublimeVideo/sv_cms_plugins"
 alias srp="cd $JILION_PATH/Products/SublimeVideo/sv_stat_request_parser"
+alias sst="cd $JILION_PATH/Products/SublimeVideo/sv_seconds_ticker"
 alias svw="cd $JILION_PATH/Products/SublimeVideo/sublimevideo.net.wiki"
 alias svs="cd $JILION_PATH/Products/SublimeVideo/sublimevideo" # sublime video site
 alias ssv="cd $JILION_PATH/Products/SublimeVideo/status.sublimevideo.net"
