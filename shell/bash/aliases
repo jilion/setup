@@ -124,7 +124,7 @@ function grf() {
 alias m="mate"
 alias m.="mate ."
 alias mm="mate ."
-alias mr="mate app bin config db doc public/javascripts lib lib/tasks done public/stylesheets vendor/gems vendor/plugins spec features test todo todo.todo tools Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore .slugignore .gitconfig *.gemspec .gems .git/config config.ru Gemfile Guardfile Procfile application.rb"
+alias mr="mate app bin config db doc lib lib/tasks done vendor/gems vendor/plugins spec features test todo todo.todo tools Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .env .travis.yml .gitignore .slugignore .gitconfig *.gemspec .gems .git/config config.ru Gemfile Guardfile Procfile application.rb"
 alias mg="mate bin config doc lib lib/tasks man spec features test Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore .slugignore *.gemspec .gems .git/config config.ru Gemfile Guardfile"
 
 # Mou
