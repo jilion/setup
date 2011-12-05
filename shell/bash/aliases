@@ -97,6 +97,7 @@ alias gt="g"
 alias gst="g"
 alias eg="mate .git/config"
 alias gx="gitx"
+alias gh="github"
 # Git clone from GitHub
 function gch() {
   git clone git://github.com/$USER/$1.git
