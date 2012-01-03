@@ -1,26 +1,22 @@
 # Command Enhancements
 
 # Utility
-alias reload="source $JIME_SETUP_PATH/shell/bash/aliases"
-alias ea="mate -w $JIME_SETUP_PATH/shell/bash/aliases && reload" # Edit aliases
+alias reload="source $JILION_PATH/Products/setup/dotfiles/bash/aliases"
+alias ea="mate -w $JILION_PATH/Products/setup/dotfiles/bash/aliases && reload" # Edit aliases
 
-# Jime
-alias js="cd $JIME_SETUP_PATH"
-alias jj="cd $JIME_CODE_PATH/Jime.com"
-alias jf="cd $JIME_CODE_PATH/Jime.org"
-alias ju="cd $JIME_CODE_PATH/upload"
-# alias jb="cd $JIME_CODE_PATH/backstage"
-alias jl="cd $JIME_CODE_PATH/locations"
-alias gol="cd $JIME_CODE_PATH/gollum"
-
-# Jilion
+# Jilion Clients
 alias mi="cd $JILION_PATH/Clients/Mintt/mintt"
 
+# Jilion Products
 alias ba="cd $JILION_PATH/Products/backups"
 alias dn="cd $JILION_PATH/Products/Ding"
+alias js="cd $JILION_PATH/Products/setup"
+
+# Jilion.com
 alias ji="cd $JILION_PATH/Products/Jilion.com/jilion.com"
 alias jb="cd $JILION_PATH/Products/Jilion.com/blog.jilion.com"
 
+# SublimeVideo
 alias sb="cd $JILION_PATH/Products/Jilion.com/sublime"
 alias sv="cd $JILION_PATH/Products/SublimeVideo/sublime_video"
 alias psv="cd $JILION_PATH/Products/SublimeVideo/sv_cms_plugins"
@@ -32,6 +28,7 @@ alias svs="cd $JILION_PATH/Products/SublimeVideo/sublimevideo.net" # sublime vid
 alias ssv="cd $JILION_PATH/Products/SublimeVideo/status.sublimevideo.net"
 alias dsv="cd $JILION_PATH/Products/SublimeVideo/data.sublimevideo.net"
 
+# Aelios
 alias ae="cd $JILION_PATH/Products/Aelios/iOS/App"            # Aelios app
 alias aea="cd $JILION_PATH/Products/Aelios/Web/aeliosapp.com"       # Aelios app site
 alias aep="cd $JILION_PATH/Products/Aelios/Web/api.aeliosapp.com"     # Aelios api
