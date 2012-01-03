@@ -3,6 +3,7 @@
 # Utility
 alias reload="source $JILION_PATH/Products/setup/dotfiles/bash/aliases"
 alias ea="mate -w $JILION_PATH/Products/setup/dotfiles/bash/aliases && reload" # Edit aliases
+alias jsau="js && gl && reload" # Jilion setup aliases update
 
 # Jilion Clients
 alias mi="cd $JILION_PATH/Clients/Mintt/mintt"

@@ -1,5 +1,5 @@
-# add at the top of your ~/.bashrc
-# export JILION_PATH=<path to your jilion projects dir.>
+# add at the top of your ~/.zshrc
+# export JILION_PATH=<path to your Jilion projects dir.>
 #
 # . $JILION_PATH/Products/setup/dotfiles/zshrc
 
