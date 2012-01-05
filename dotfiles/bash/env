@@ -1,4 +1,4 @@
-export PATH=$JIME_SETUP_PATH/bin:$PATH
+export PATH=$JILION_PATH/Products/setup/bin:$PATH
 
 # Textmate
 export PATH=$PATH:/Applications/TextMate.app/Contents/Resources

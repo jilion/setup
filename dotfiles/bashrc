@@ -1,0 +1,8 @@
+# add at the top of your ~/.bashrc
+# export JILION_PATH=<path to your Jilion projects dir.>
+# 
+# . $JILION_PATH/Products/setup/dotfiles/bashrc
+
+. $JILION_PATH/Products/setup/dotfiles/bash/aliases
+. $JILION_PATH/Products/setup/dotfiles/bash/config
+. $JILION_PATH/Products/setup/dotfiles/bash/env
