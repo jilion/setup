@@ -31,7 +31,7 @@ alias ssv="cd $JILION_PATH/Products/SublimeVideo/status.sublimevideo.net"
 alias dsv="cd $JILION_PATH/Products/SublimeVideo/data.sublimevideo.net"
 
 # Aelios
-alias ae="cd $JILION_PATH/Products/Aelios/iOS/App"            # Aelios app
+alias ae="cd $JILION_PATH/Products/Aelios/iOS"            # Aelios app
 alias aea="cd $JILION_PATH/Products/Aelios/Web/aeliosapp.com"       # Aelios app site
 alias aep="cd $JILION_PATH/Products/Aelios/Web/api.aeliosapp.com"     # Aelios api
 alias aes="cd $JILION_PATH/Products/Aelios/Web/stats.aeliosapp.com"   # Aelios stats
@@ -128,6 +128,8 @@ alias m.="mate ."
 alias mm="mate ."
 alias mr="mate app bin config db doc lib lib/tasks done vendor/gems vendor/plugins spec features test todo todo.todo tools Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .env .travis.yml .gitignore .slugignore .gitconfig *.gemspec .gems .git/config config.ru Gemfile Guardfile Procfile application.rb"
 alias mg="mate bin config doc lib lib/tasks man spec features test Rakefile LICENSE README.* CHANGELOG.* cucumber.yml .travis.yml .gitignore .slugignore *.gemspec .gems .git/config config.ru Gemfile Guardfile"
+alias ms="mate app build compiler docs loader Guardfile Gemfile Rakefile TODO spec www README"
+
 
 # Mou
 alias mou='open -a Mou'
@@ -177,6 +179,7 @@ alias gr="gem read --latest"
 # guard
 alias bg="be guard"
 alias bgc="be guard -c"
+alias bga="be guard -c -A"
 
 # passenger
 alias pgs="passenger start"
