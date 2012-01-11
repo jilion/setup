@@ -3,4 +3,8 @@
 # Be sure to have your TextMate Preference > Advanced > Folder References like that:
 # File Pattern: !(/\.(?!htaccess)[^/]*|tmtags|\.(tmproj|o|pyc)|/Icon\r|/svn-commit(\.[2-9])?\.tmp|production\.sql|\.swf|tclink\.bundle|\.gif|\.png|\.jpg|\.swf|\.fla|\.ico|\.pdf)$
 # Folder Pattern: !.*/(\.[^/]*|vendor/rails|public/uploads|vendor/ruby|rails_root|CVS|tmp|data_dump|build|_darcs|pkg |_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)? |bundle))$
-alias mr="mate ./^(log|tmp)/ .^(git|DS_Store) *.^lock .git/config LICENSE Rakefile Gemfile Procfile Capfile Guardfile"
+alias mr="mate ./^(log|pkg|tmp)/ .^(git|DS_Store) *.^lock .git/config LICENSE Rakefile Gemfile Procfile Capfile Guardfile"
+
+lf() { letsfreckle.rb -i $1 -p $2 -t $3 $4 $5 $6 $7 $8 }
+_lf() { reply=(svs code design meeting brainstorm support bizdev marketing) }
+compctl -K _lf lf
