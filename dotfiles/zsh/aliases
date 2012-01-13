@@ -6,5 +6,5 @@
 alias mr="mate ./^(log|pkg|tmp)/ .^(git|DS_Store) *.^lock .git/config LICENSE Rakefile Gemfile Procfile Capfile Guardfile"
 
 lf() { letsfreckle.rb -i $1 -p $2 -t $3 $4 $5 $6 $7 $8 }
-_lf() { reply=(svs code design meeting brainstorm support bizdev marketing) }
+_lf() { reply=(svs code design meeting brainstorming support bizdev marketing) }
 compctl -K _lf lf
