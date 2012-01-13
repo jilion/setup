@@ -13,6 +13,10 @@ alias ba="cd $JILION_PATH/Products/backups"
 alias dn="cd $JILION_PATH/Products/Ding"
 alias js="cd $JILION_PATH/Products/setup"
 
+# Jilion Biz
+alias biz="cd $JILION_PATH/Products/biz"
+alias bizw="cd $JILION_PATH/Products/biz.wiki"
+
 # Jilion.com
 alias ji="cd $JILION_PATH/Products/Jilion.com/jilion.com"
 alias jb="cd $JILION_PATH/Products/Jilion.com/blog.jilion.com"
