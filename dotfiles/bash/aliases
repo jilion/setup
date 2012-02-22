@@ -30,6 +30,7 @@ alias ssr="cd $JILION_PATH/Products/SublimeVideo/sv_stat_request_parser"
 alias ssf="cd $JILION_PATH/Products/SublimeVideo/sv_stat_faker"
 alias sst="cd $JILION_PATH/Products/SublimeVideo/sv_seconds_ticker"
 alias svsw="cd $JILION_PATH/Products/SublimeVideo/sublimevideo.net.wiki"
+alias svl="cd $JILION_PATH/Products/SublimeVideo/sublimevideo_layout"
 alias svs="cd $JILION_PATH/Products/SublimeVideo/sublimevideo.net" # sublime video site
 alias ssv="cd $JILION_PATH/Products/SublimeVideo/status.sublimevideo.net"
 alias dsv="cd $JILION_PATH/Products/SublimeVideo/data.sublimevideo.net"
