@@ -203,7 +203,7 @@ alias dbr="be rake db:drop:all
            be rake db:migrate
            be rake db:test:prepare
            be rake db:seed
-           be annotate -i"
+           be annotate --show-indexes --position after"
 
 alias dbp="be rake db:populate"
 
