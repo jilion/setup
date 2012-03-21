@@ -155,13 +155,13 @@ alias gui="gem uninstall"
 # bundler
 # http://ryan.mcgeary.org/2011/02/09/vendor-everything-still-applies/
 alias b="bundle"
+alias bi="b install --standalone"
 alias bu="b update"
 alias be="b exec"
 alias bl='b list'
 alias bo='b open'
 alias bp='b package'
 alias bs='b show'
-alias bi="b install"
 alias biv="b install --path vendor"
 alias binit="biv && b package && echo 'vendor/ruby' >> .gitignore"
 
