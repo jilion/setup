@@ -171,7 +171,7 @@ alias po='powder open'
 alias pr='powder restart'
 
 # heroku
-alias h='be heroku'
+alias h='heroku'
 alias hl='h logs --tail'
 alias hs='h scale'
 alias ho='h open'
@@ -198,18 +198,18 @@ alias pgs="passenger start"
 # =========
 
 alias ttr="touch tmp/restart.txt"
-alias rr="be rake routes"
+alias rr="rake routes"
 
-alias dbtp="be rake db:test:prepare"
-alias dbm="be rake db:migrate"
-alias dbr="be rake db:drop:all
-           be rake db:create:all
-           be rake db:migrate
-           be rake db:test:prepare
-           be rake db:seed
-           be annotate --show-indexes --position after"
+alias dbtp="rake db:test:prepare"
+alias dbm="rake db:migrate"
+alias dbr="rake db:drop:all
+           rake db:create:all
+           rake db:migrate
+           rake db:test:prepare
+           rake db:seed
+           annotate --show-indexes --position after"
 
-alias dbp="be rake db:populate"
+alias dbp="rake db:populate"
 
 alias dbrp="dbr && dbp"
 
@@ -247,5 +247,5 @@ alias rd="rails destroy"
 alias rp="rails plugin"
 
 # BDD
-alias rsa="be rake spec:acceptance"
-alias rsp="be rake spec:portability"
+alias rsa="rake spec:acceptance"
+alias rsp="rake spec:portability"
