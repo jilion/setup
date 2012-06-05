@@ -57,6 +57,8 @@ alias hi="history"
 alias o="open ."
 alias ..="cd .."
 alias cd..="cd .."
+alias ...="cd .. && cd .."
+alias c="clear"
 
 # Function
 function take() {
@@ -190,7 +192,6 @@ alias gr="gem read --latest"
 # guard
 alias bg="be guard"
 alias bgc="be guard -c"
-alias bga="be guard -c -A"
 
 # passenger
 alias pgs="passenger start"
