@@ -40,6 +40,7 @@ alias mysv="cd $JILION_PATH/Products/SublimeVideo/my.sublimevideo.net"
 alias mysvw="cd $JILION_PATH/Products/SublimeVideo/my.sublimevideo.net.wiki"
 alias resv="cd $JILION_PATH/Products/SublimeVideo/ref.sublimevideo.net"
 alias wwsv="cd $JILION_PATH/Products/SublimeVideo/sublimevideo.net"
+alias scsv="cd $JILION_PATH/Products/SublimeVideo/scout.sublimevideo.net"
 
 # Aelios
 alias ae="cd $JILION_PATH/Products/Aelios/iOS"            # Aelios app
