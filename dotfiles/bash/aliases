@@ -21,10 +21,12 @@ alias bizw="cd $JILION_PATH/Products/biz.wiki"
 alias ji="cd $JILION_PATH/Products/Jilion.com/jilion.com"
 alias jb="cd $JILION_PATH/Products/Jilion.com/blog.jilion.com"
 
-# SublimeVideo
+# SublimeVideo 
 alias sb="cd $JILION_PATH/Products/Jilion.com/sublime"
-alias sv="cd $JILION_PATH/Products/SublimeVideo/sublime_video"
-alias svv="cd $JILION_PATH/Products/SublimeVideo/sublimevideo"
+alias svv="cd $JILION_PATH/Products/SublimeVideo/sublime_video"
+alias sv="cd $JILION_PATH/Products/SublimeVideo/sublimevideo"
+alias svc="svv; cd www; coffee app.coffee"
+alias svp="subl --project $JILION_PATH/Products/SublimeVideo/sublimevideo/sublimevideo.sublime-project"
 alias psv="cd $JILION_PATH/Products/SublimeVideo/sv_cms_plugins"
 alias ssrp="cd $JILION_PATH/Products/SublimeVideo/sv_stat_request_parser"
 alias ssr="cd $JILION_PATH/Products/SublimeVideo/sv_stat_remover"
@@ -135,6 +137,10 @@ function grf() {
 #   git config branch.master.merge refs/heads/master
 #   git config push.default current
 # }
+
+# Sublime Text
+alias s="subl"
+alias s.="subl ."
 
 # TextMate
 alias m="mate"
