@@ -2,7 +2,7 @@
 
 # Utility
 alias reload="source $JILION_PATH/Products/setup/dotfiles/bash/aliases"
-alias ea="mate -w $JILION_PATH/Products/setup/dotfiles/bash/aliases && reload" # Edit aliases
+alias ea="s -w $JILION_PATH/Products/setup/dotfiles/bash/aliases && reload" # Edit aliases
 alias jsau="js && gl && reload" # Jilion setup aliases update
 
 # Jilion Clients
@@ -111,7 +111,7 @@ alias gm="git merge"
 alias g="git status"
 alias gt="g"
 alias gst="g"
-alias eg="mate .git/config"
+alias eg="s .git/config"
 alias gx="gitx"
 alias gh="github"
 # Git clone from GitHub

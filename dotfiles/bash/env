@@ -1,8 +1,10 @@
 export PATH=$JILION_PATH/Products/setup/bin:$PATH
 
+export LANG=en_US.UTF-8
+
 # Textmate
 export PATH=$PATH:/Applications/TextMate.app/Contents/Resources
-export EDITOR='mate -w'
-export GIT_EDITOR="mate -w"
+export EDITOR='subl'
+export GIT_EDITOR="s -w"
 
 # Set PATH, CDPATH, EDITOR, etc.echo
