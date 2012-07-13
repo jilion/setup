@@ -4,7 +4,5 @@ export LANG=en_US.UTF-8
 
 # Textmate
 export PATH=$PATH:/Applications/TextMate.app/Contents/Resources
-export EDITOR='subl'
-export GIT_EDITOR='subl -w'
 
 # Set PATH, CDPATH, EDITOR, etc.echo
