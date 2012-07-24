@@ -9,4 +9,6 @@ export PATH=$JILION_PATH/Products/setup/bin:$PATH
 export EDITOR='subl -w'
 export GIT_EDITOR="subl -w"
 
+export LANG=en_US.UTF-8
+
 # Set PATH, CDPATH, EDITOR, etc.echo
