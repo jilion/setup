@@ -9,5 +9,5 @@ alias reload="source $JILION_PATH/Products/setup/dotfiles/zsh/aliases && source 
 alias mr="mate ./^(log|pkg|tmp|bundle)/ .^(git|DS_Store|sass-cache) *.^lock .git/config LICENSE Rakefile Gemfile Procfile Capfile Guardfile Vagrantfile"
 
 lf() { letsfreckle.rb -i $1 -p $2 -t $3 $4 $5 $6 $7 $8 }
-_lf() { reply=(organization aelios blog documentation marcomms player service support video_hosting business_model mockups specifications wireframes deployment implementation maintenance) }
+_lf() { reply=(organization aelios blog documentation marcomms player service support video_hosting business_model cdn_migration mockups specifications wireframes deployment implementation maintenance) }
 compctl -K _lf lf
