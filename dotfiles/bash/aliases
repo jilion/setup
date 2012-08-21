@@ -21,7 +21,7 @@ alias bizw="cd $JILION_PATH/Products/biz.wiki"
 alias ji="cd $JILION_PATH/Products/Jilion.com/jilion.com"
 alias jb="cd $JILION_PATH/Products/Jilion.com/blog.jilion.com"
 
-# SublimeVideo 
+# SublimeVideo
 alias sb="cd $JILION_PATH/Products/Jilion.com/sublime"
 alias svv="cd $JILION_PATH/Products/SublimeVideo/sublime_video"
 alias sv="cd $JILION_PATH/Products/SublimeVideo/sublimevideo"
@@ -210,17 +210,17 @@ alias pgs="passenger start"
 alias ttr="touch tmp/restart.txt"
 alias rr="rake routes"
 
+alias dban="bundle exec annotate --position after --sort --show-indexes"
 alias dbtp="rake db:test:prepare"
-alias dbm="rake db:migrate"
+alias dbm="rake db:migrate && dbtp && dban"
 alias dbr="rake db:drop:all
            rake db:create:all
            rake db:migrate
            rake db:test:prepare
            rake db:seed
-           annotate --show-indexes --position after"
+           dban"
 
 alias dbp="rake db:populate"
-
 alias dbrp="dbr && dbp"
 
 alias tl="tail -f log/*.log"
