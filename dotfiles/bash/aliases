@@ -196,6 +196,8 @@ alias ho='h open'
 alias hr='h restart'
 alias ha='h addons'
 alias hc='h config'
+alias hca='h config:add'
+alias hcr='h config:remove'
 alias hi='h info'
 alias hps='h ps'
 
