@@ -121,6 +121,7 @@ alias gst="g"
 alias eg="s .git/config"
 alias gx="gitx"
 alias gh="github"
+alias gsu="git submodule update"
 # Git clone from GitHub
 function gch() {
   git clone git://github.com/$USER/$1.git
