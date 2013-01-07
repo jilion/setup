@@ -42,6 +42,7 @@ alias apsv="cd $JILION_PATH/Products/SublimeVideo/api.sublimevideo.net"
 alias dasv="cd $JILION_PATH/Products/SublimeVideo/data.sublimevideo.net"
 alias dosv="cd $JILION_PATH/Products/SublimeVideo/docs.sublimevideo.net"
 alias dosvp="dosv && subl --project $JILION_PATH/Products/SublimeVideo/docs.sublimevideo.net/docs.sublimevideo.net.sublime-project"
+alias sisv="cd $JILION_PATH/Products/SublimeVideo/sidekiq.sublimevideo.net"
 alias stsv="cd $JILION_PATH/Products/SublimeVideo/status.sublimevideo.net"
 alias mysv="cd $JILION_PATH/Products/SublimeVideo/my.sublimevideo.net"
 alias mysvp="mysv && subl --project $JILION_PATH/Products/SublimeVideo/my.sublimevideo.net/my.sublimevideo.net.sublime-project"
@@ -219,19 +220,19 @@ alias pgs="passenger start"
 # =========
 
 alias ttr="touch tmp/restart.txt"
-alias rr="rake routes"
+alias rr="r routes"
 
 alias dban="bundle exec annotate --position after --sort --show-indexes"
-alias dbtp="rake db:test:prepare"
-alias dbm="rake db:migrate && dbtp && dban"
-alias dbr="rake db:drop:all
-           rake db:create:all
-           rake db:migrate
-           rake db:test:prepare
-           rake db:seed
+alias dbtp="r db:test:prepare"
+alias dbm="r db:migrate && dbtp && dban"
+alias dbr="r db:drop:all
+           r db:create:all
+           r db:migrate
+           r db:test:prepare
+           r db:seed
            dban"
 
-alias dbp="rake db:populate"
+alias dbp="r db:populate"
 alias dbrp="dbr && dbp"
 
 alias tl="tail -f log/*.log"
