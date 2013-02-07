@@ -6,8 +6,8 @@ export PATH=$JILION_PATH/Products/setup/bin:$PATH
 # export GIT_EDITOR="mate -w"
 
 # Sublime Text
-export EDITOR='subl -w'
-export GIT_EDITOR="subl -w"
+# export EDITOR='subl -w'
+# export GIT_EDITOR="subl -w"
 
 export LANG=en_US.UTF-8
 
