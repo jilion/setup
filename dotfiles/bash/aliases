@@ -31,6 +31,7 @@ alias svc="sv && cd www && coffee app.coffee"
 alias svp="sv && subl --project $JILION_PATH/Products/SublimeVideo/sublimevideo/sublimevideo.sublime-project"
 # SV integration tools (third-party)
 alias psv="cd $JILION_PATH/Products/SublimeVideo/sv_cms_plugins"
+alias svwp="psv && cd wordpress-install/wp-content/plugins/sublimevideo-official"
 alias ssrp="cd $JILION_PATH/Products/SublimeVideo/sv_stat_request_parser"
 alias ssr="cd $JILION_PATH/Products/SublimeVideo/sv_stat_remover"
 alias ssf="cd $JILION_PATH/Products/SublimeVideo/sv_stat_faker"
