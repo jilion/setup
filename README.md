@@ -20,12 +20,12 @@ export JILION_PATH=<path to your Jilion projects dir.>
 
 ### ZSH
 
-Add at the top of your ~/.zshrc
+Add at the top of your ~/.zshenv
 
 ``` bash
 export JILION_PATH=<path to your Jilion projects dir.>
 
-. $JILION_PATH/Products/setup/dotfiles/zshrc
+. $JILION_PATH/Products/setup/dotfiles/zshenv
 ```
 
 ## Update
