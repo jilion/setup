@@ -43,6 +43,7 @@ alias svpap="svpa && subl --project $JILION_PATH/Products/SublimeVideo/sublime_v
 alias adsv="cd $JILION_PATH/Products/SublimeVideo/admin.sublimevideo.net"
 alias apsv="cd $JILION_PATH/Products/SublimeVideo/api.sublimevideo.net"
 alias dasv="cd $JILION_PATH/Products/SublimeVideo/data.sublimevideo.net"
+alias ersv="cd $JILION_PATH/Products/SublimeVideo/errors.sublimevideo.net"
 alias dosv="cd $JILION_PATH/Products/SublimeVideo/docs.sublimevideo.net"
 alias dosvp="dosv && subl --project $JILION_PATH/Products/SublimeVideo/docs.sublimevideo.net/docs.sublimevideo.net.sublime-project"
 alias sisv="cd $JILION_PATH/Products/SublimeVideo/sidekiq.sublimevideo.net"
