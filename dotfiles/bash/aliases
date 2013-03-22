@@ -27,6 +27,7 @@ alias sb="cd $JILION_PATH/Products/Jilion.com/sublime"
 alias svv="cd $JILION_PATH/Products/SublimeVideo/sublime_video"
 # New player
 alias sv="cd $JILION_PATH/Products/SublimeVideo/sublimevideo"
+alias sbt="cd $JILION_PATH/Products/SublimeVideo/sublime_tools"
 alias svc="sv && cd www && coffee app.coffee"
 alias svp="sv && subl --project $JILION_PATH/Products/SublimeVideo/sublimevideo/sublimevideo.sublime-project"
 # SV integration tools (third-party)
