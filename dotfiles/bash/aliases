@@ -261,6 +261,8 @@ function rs {
 function rc {
   if [ -e script/rails ]; then
     script/rails console $@
+  elif [ -e bin/rails ]; then
+    bin/rails console $@
   else
     script/console $@
   fi
