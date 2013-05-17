@@ -27,6 +27,7 @@ alias sb="cd $JILION_PATH/Products/Jilion.com/sublime"
 alias svv="cd $JILION_PATH/Products/SublimeVideo/sublimevideo_next"
 # New player
 alias sv="cd $JILION_PATH/Products/SublimeVideo/sublimevideo"
+alias sbt="cd $JILION_PATH/Products/SublimeVideo/sublime_tools"
 alias svc="sv && cd www && coffee app.coffee"
 alias svp="sv && subl --project $JILION_PATH/Products/SublimeVideo/sublimevideo/sublimevideo.sublime-project"
 # SV integration tools (third-party)
@@ -46,9 +47,12 @@ alias dasv="cd $JILION_PATH/Products/SublimeVideo/data.sublimevideo.net"
 alias ersv="cd $JILION_PATH/Products/SublimeVideo/errors.sublimevideo.net"
 alias dosv="cd $JILION_PATH/Products/SublimeVideo/docs.sublimevideo.net"
 alias dosvp="dosv && subl --project $JILION_PATH/Products/SublimeVideo/docs.sublimevideo.net/docs.sublimevideo.net.sublime-project"
+alias losv="cd $JILION_PATH/Products/SublimeVideo/logs.sublimevideo.net"
+alias losvp="dosv && subl --project $JILION_PATH/Products/SublimeVideo/logs.sublimevideo.net/logs.sublimevideo.net.sublime-project"
 alias sisv="cd $JILION_PATH/Products/SublimeVideo/sidekiq.sublimevideo.net"
 alias sisvp="sisv && subl --project $JILION_PATH/Products/SublimeVideo/sidekiq.sublimevideo.net/sidekiq.sublimevideo.net.sublime-project"
-alias stsv="cd $JILION_PATH/Products/SublimeVideo/status.sublimevideo.net"
+alias stsv="cd $JILION_PATH/Products/SublimeVideo/stats.sublimevideo.net"
+alias susv="cd $JILION_PATH/Products/SublimeVideo/status.sublimevideo.net"
 alias mysv="cd $JILION_PATH/Products/SublimeVideo/my.sublimevideo.net"
 alias mysvp="mysv && subl --project $JILION_PATH/Products/SublimeVideo/my.sublimevideo.net/my.sublimevideo.net.sublime-project"
 alias mysvw="cd $JILION_PATH/Products/SublimeVideo/my.sublimevideo.net.wiki"
@@ -259,6 +263,8 @@ function rs {
 function rc {
   if [ -e script/rails ]; then
     script/rails console $@
+  elif [ -e bin/rails ]; then
+    bin/rails console $@
   else
     script/console $@
   fi
