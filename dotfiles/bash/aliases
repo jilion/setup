@@ -23,8 +23,8 @@ alias jb="cd $JILION_PATH/Products/Jilion.com/blog.jilion.com"
 
 # SublimeVideo
 alias sb="cd $JILION_PATH/Products/Jilion.com/sublime"
-# Old player
-alias svv="cd $JILION_PATH/Products/SublimeVideo/sublime_video"
+# New player
+alias svv="cd $JILION_PATH/Products/SublimeVideo/sublimevideo_next"
 # New player
 alias sv="cd $JILION_PATH/Products/SublimeVideo/sublimevideo"
 alias svc="sv && cd www && coffee app.coffee"
