@@ -21,15 +21,15 @@ alias bizw="cd $JILION_PATH/Products/biz.wiki"
 alias ji="cd $JILION_PATH/Products/Jilion.com/jilion.com"
 alias jb="cd $JILION_PATH/Products/Jilion.com/blog.jilion.com"
 
-# SublimeVideo
-alias sb="cd $JILION_PATH/Products/Jilion.com/sublime"
-# New player
-alias svv="cd $JILION_PATH/Products/SublimeVideo/sublimevideo_next"
-# New player
-alias sv="cd $JILION_PATH/Products/SublimeVideo/sublimevideo"
+# SublimeVideo Player with old setup
+alias svv="cd $JILION_PATH/Products/SublimeVideo/sublimevideo"
+# alias svc="sv && cd www && coffee app.coffee"
+
+# SublimeVideo Player
+alias sv="cd $JILION_PATH/Products/SublimeVideo/sublimevideo_next"
 alias sbt="cd $JILION_PATH/Products/SublimeVideo/sublime_tools"
-alias svc="sv && cd www && coffee app.coffee"
-alias svp="sv && subl --project $JILION_PATH/Products/SublimeVideo/sublimevideo/sublimevideo.sublime-project"
+alias svp="sv && subl --project $JILION_PATH/Products/SublimeVideo/sublimevideo_next/sublime.sublime-project"
+
 # SV integration tools (third-party)
 alias psv="cd $JILION_PATH/Products/SublimeVideo/sv_cms_plugins"
 alias svwp="psv && cd wordpress-install/wp-content/plugins/sublimevideo-official"
