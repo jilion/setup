@@ -208,15 +208,15 @@ alias pr='powder restart'
 # heroku
 alias h='heroku'
 alias hl='h logs --tail'
-alias hs='h scale'
-alias ho='h open'
-alias hr='h restart'
+alias hps='h ps'
+alias hs='h ps:scale'
+alias hr='h ps:restart'
 alias ha='h addons'
 alias hc='h config'
-alias hca='h config:add'
-alias hcr='h config:remove'
+alias hcs='h config:set'
+alias hcu='h config:unset'
+alias ho='h open'
 alias hi='h info'
-alias hps='h ps'
 
 # open_gem
 alias go="gem open --latest"
