@@ -30,6 +30,8 @@ alias sv="cd $JILION_PATH/Products/SublimeVideo/sublimevideo_next"
 alias sbt="cd $JILION_PATH/Products/SublimeVideo/sublime_tools"
 alias svp="sv && subl --project $JILION_PATH/Products/SublimeVideo/sublimevideo_next/sublime.sublime-project"
 
+alias dm="cd $JILION_PATH/Products/dmplayer"
+
 # SV integration tools (third-party)
 alias psv="cd $JILION_PATH/Products/SublimeVideo/sv_cms_plugins"
 alias svwp="psv && cd wordpress-install/wp-content/plugins/sublimevideo-official"
