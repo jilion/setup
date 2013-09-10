@@ -165,6 +165,7 @@ function grf() {
 # Sublime Text
 alias s="subl"
 alias s.="subl ."
+alias ss="subl ..sublime-project"
 
 # TextMate
 alias m="mate"
