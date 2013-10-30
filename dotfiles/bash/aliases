@@ -66,6 +66,7 @@ alias wwsvp="wwsv && subl --project $JILION_PATH/Products/SublimeVideo/sublimevi
 alias scsv="cd $JILION_PATH/Products/SublimeVideo/scout.sublimevideo.net"
 alias scsvp="scsv && subl --project $JILION_PATH/Products/SublimeVideo/scout.sublimevideo.net/scout.sublimevideo.net.sublime-project"
 alias plsv="cd $JILION_PATH/Products/SublimeVideo/player.sublimevideo.net"
+alias sasv="cd $JILION_PATH/Products/SublimeVideo/scaler.sublimevideo.net"
 
 # Aelios
 alias ae="cd $JILION_PATH/Products/Aelios/iOS"                      # Aelios app
