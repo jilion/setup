@@ -38,13 +38,13 @@ class App
   end
 
   def jilion_path
-    `echo $JILION_PATH`.gsub "\n", ''
+    `echo $JILION_PATH`.strip
   end
 end
 
 class Git
   def current_branch
-    %x{git branch | sed -n '/\* /s///p'}.gsub "\n", ''
+    %x{git branch | sed -n '/\* /s///p'}.strip
   end
 
   def inside_clean_master_branch
