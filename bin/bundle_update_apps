@@ -1,0 +1,88 @@
+#!/usr/bin/env ruby
+
+class App
+  JILION_APPS = %w[jilion.com]
+  SUBLIMEVIDEO_APPS = %w[
+    api.sublimevideo.net
+    data.sublimevideo.net
+    docs.sublimevideo.net
+    logs.sublimevideo.net
+    my.sublimevideo.net
+    ref.sublimevideo.net
+    scout.sublimevideo.net
+    stats.sublimevideo.net
+    sublimevideo.net
+    videos.sublimevideo.net
+  ]
+
+  def self.all
+    jilion_apps + sublimevideo_apps
+  end
+
+  def self.jilion_apps
+    JILION_APPS.map { |app| new(app, "Jilion.com") }
+  end
+
+  def self.sublimevideo_apps
+    SUBLIMEVIDEO_APPS.map { |app| new(app, "SublimeVideo") }
+  end
+
+  attr_accessor :name
+  def initialize(name, product)
+    @name = name
+    @product = product
+  end
+
+  def path
+    "#{jilion_path}/Products/#{@product}/#{name}"
+  end
+
+  def jilion_path
+    `echo $JILION_PATH`.gsub "\n", ''
+  end
+end
+
+class Git
+  def current_branch
+    %x{git branch | sed -n '/\* /s///p'}.gsub "\n", ''
+  end
+
+  def inside_clean_master_branch
+    if _branch?(:master) && _pending_commit?
+      puts "WARNING: Skipped not in master branch or pending commits."
+    else
+      `git pull --rebase`
+      yield
+    end
+  end
+
+  def commit_and_push(message)
+    if _pending_commit?
+      system "git commit -a -m '#{message}'"
+      system "git push origin master"
+    else
+      puts "Nothing to commit, gems already up-to-date."
+    end
+  end
+
+  private
+
+  def _branch?(name)
+    current_branch == name.to_s
+  end
+
+  def _pending_commit?
+    !`git status`.include? "nothing to commit, working directory clean"
+  end
+end
+
+git = Git.new
+App.all.each do |app|
+  puts "======= #{app.name} ======="
+  Dir.chdir(app.path) do
+    git.inside_clean_master_branch do
+      system "bundle update"
+      git.commit_and_push("Update gems (auto)")
+    end
+  end
+end
