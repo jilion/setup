@@ -30,7 +30,14 @@ alias sv="cd $JILION_PATH/Products/SublimeVideo/sublimevideo_next"
 alias sbt="cd $JILION_PATH/Products/SublimeVideo/sublime_tools"
 alias svp="sv && subl --project $JILION_PATH/Products/SublimeVideo/sublimevideo_next/sublime.sublime-project"
 
-alias dm="cd $JILION_PATH/Products/dmplayer"
+alias jdm="cd $JILION_PATH/Products/dmplayer"
+alias jdmf="cd $JILION_PATH/Products/dmplayer_flash"
+
+# Dailymotion
+alias dm="cd $DAILYMOTION_PATH/player"
+alias dmo="dm && subl player.sublime-project"
+alias dmb="cd $DAILYMOTION_PATH/player-backend"
+alias dmbs="dmb && make start"
 
 # SV integration tools (third-party)
 alias psv="cd $JILION_PATH/Products/SublimeVideo/sv_cms_plugins"
@@ -162,7 +169,6 @@ function grf() {
 # Sublime Text
 alias s="subl"
 alias s.="subl ."
-alias ss="subl ..sublime-project"
 
 # TextMate
 alias m="mate"
@@ -199,7 +205,6 @@ alias biv="b install --path vendor"
 alias binit="biv && b package && echo 'vendor/ruby' >> .gitignore"
 
 # powder
-alias pl='powder link'
 alias po='powder open'
 alias pr='powder restart'
 
