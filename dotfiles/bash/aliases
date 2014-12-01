@@ -78,6 +78,9 @@ alias aep="cd $JILION_PATH/Products/Aelios/Web/api.aeliosapp.com"   # Aelios api
 alias aes="cd $JILION_PATH/Products/Aelios/Web/stats.aeliosapp.com" # Aelios stats
 alias aen="cd $JILION_PATH/Products/Aelios/Web/admin.aeliosapp.com" # Aelios admin
 
+# Flsh debugger
+alias flog='tail -f ~/Library/Preferences/Macromedia/Flash\ Player/Logs/flashlog.txt'
+
 # Common -- Some are from Damian Conway
 alias l="ls -lhF"
 alias la="ls -lahF"
